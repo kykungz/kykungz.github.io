@@ -5,7 +5,6 @@ canvas.height = window.innerHeight;
 canvas.onclick = function canvasClicked(pos) {
     hero.x = pos.clientX;
     hero.y = pos.clientY;
-
 };
 
 window.addEventListener("keydown", handleKeyDown, false);
