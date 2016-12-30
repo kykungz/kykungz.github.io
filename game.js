@@ -9,7 +9,12 @@ canvas.onclick = function canvasClicked(pos) {
 
 window.addEventListener("keydown", handleKeyDown, false);
 window.addEventListener("keyup", handleKeyUp, false);
+window.addEventListener("onmove", handleMouseMove, false);
 
+function handleMouseMove(pos) {
+  hero.x = pos.clientX;
+  hero.y = pos.clientY;
+}
 
 var fps = 20;
 var generateEvery = 500; // ms
