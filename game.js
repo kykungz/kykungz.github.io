@@ -9,7 +9,7 @@ canvas.onclick = function canvasClicked(pos) {
 
 window.addEventListener("keydown", handleKeyDown, false);
 window.addEventListener("keyup", handleKeyUp, false);
-window.addEventListener("onmove", handleMouseMove, false);
+window.addEventListener("onmousemove", handleMouseMove, false);
 
 function handleMouseMove(pos) {
   hero.x = pos.clientX;
