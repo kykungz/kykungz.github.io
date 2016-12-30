@@ -3,16 +3,14 @@ var ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 canvas.onclick = function canvasClicked(pos) {
-    alert("asdf");
+    hero.x = pos.clientX;
+    hero.y = pos.clientY;
 
 };
 
 window.addEventListener("keydown", handleKeyDown, false);
 window.addEventListener("keyup", handleKeyUp, false);
-canvas.onmousemove = function handleMouseMove(pos) {
-    hero.x = pos.clientX;
-    hero.y = pos.clientY;
-};
+
 
 
 var fps = 20;
