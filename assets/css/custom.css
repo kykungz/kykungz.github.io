@@ -18,8 +18,3 @@ html * {
 .info {
     font-size: 20px;
 }
-
-.v-center {
-    display: flex;
-    align-items: center;
-}
