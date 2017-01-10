@@ -10,10 +10,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <style>
         .container.content-container {
             max-width: 850px;
+        }
+
+        .nav.navbar-nav li a {
+            color: #373737;
+            font-family: 'work sans';
+            font-size: 18px;
+        }
+
+        .nav.navbar-nav li a:hover {
+            background-color: #f2f2f2;
+            font-family: 'work sans';
+            font-size: 18px;
+        }
+
+        navbar.navbar-default {
+            background-color: blue;
         }
     </style>
 
@@ -22,58 +39,56 @@
 <body id="page-top" class="index">
     <!-- Navigation Bar -->
     <!-- Padding-->
-    <div class="navbar navbar-default navbar-static-top"></div>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-brand">
+            <div class="navbar-brand navbar-left">
                 <a style="color:black;" href="#">
-                    <h4><strong>Kongpon C</strong></h4>
+                    <strong>Kongpon C</strong>
                 </a>
             </div>
-            <ul class="nav nav-pills navbar-right hidden-xs">
-                <li role="navigation">
-                    <a style="color:black;" href="/">
-                        <h4>
-                          <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
-                        </h4>
-                    </a>
-                </li>
-                <li>
-                    <a style="color:black;" href="about/">
-                        <h4>
-                          <span class="glyphicon glyphicon-user" aria-hidden="true"></span> About
-                        </h4>
-                    </a>
-                </li>
-                <li>
-                    <a style="color:black;" href="achievements/">
-                        <h4>
-                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Achievements
-                        </h4>
-                    </a>
-                </li>
-                <li>
-                    <a style="color:black;" href="portfolio/">
-                        <h4>
-                        <span class="glyphicon glyphicon-th" aria-hidden="true"></span> Portfolio
-                        </h4>
-                    </a>
-                </li>
-                <li>
-                    <a style="color:black;" href="contact/">
-                        <h4>
-                        <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Contact
-                        </h4>
-                    </a>
-                </li>
-            </ul>
+            <a class="navbar-toggle" name="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about/">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="achievements/">
+                            <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Achievements
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio/">
+                            <span class="glyphicon glyphicon-th" aria-hidden="true"></span> Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact/">
+                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
         </div>
     </nav>
     <!-- End Navigation Bar-->
 
 
     <!-- Content -->
-    <div class="jumbotron">
+    <div style="padding-top:6%;" class="jumbotron">
         <div class="container">
             <h1>Kongpon C.</h1>
             <h3>Software Engineer - Programmer - Developer</h3>
@@ -87,21 +102,18 @@
                 </h3>
         </div>
         <img class="img-responsive" src="https://static.wixstatic.com/media/61003f_e677bd4de94c46ce99094544c620792f~mv2_d_4688_3125_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_e677bd4de94c46ce99094544c620792f~mv2_d_4688_3125_s_4_2.jpg">
-        <br>
 
         <a href="https://localhackday.mlh.io/" target="_blank">
             <img class="img-responsive" src="https://localhackday.mlh.io/img/facebook-20161107.png" alt="">
         </a>
-        <br>
         <img class="img-responsive" src="https://static.wixstatic.com/media/61003f_f37b1d01f3354a3ca1ed81a1d1a41c7d~mv2_d_5472_3078_s_4_2.jpg/v1/fill/w_2400,h_1350,al_c,q_90,usm_0.66_1.00_0.01/61003f_f37b1d01f3354a3ca1ed81a1d1a41c7d~mv2_d_5472_3078_s_4_2.jpg"
             alt="">
-            <br>
             <img class="img-responsive" src="https://static.wixstatic.com/media/61003f_c1de1f9cfbf042ddb3217a07bf48cec8~mv2_d_4663_3109_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_c1de1f9cfbf042ddb3217a07bf48cec8~mv2_d_4663_3109_s_4_2.jpg"
                 alt="">
-                <br>
-                <img class="img-responsive" src="https://static.wixstatic.com/media/61003f_11698b6d26dc47df8c6fedfb3ae6707d~mv2_d_4600_3067_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_11698b6d26dc47df8c6fedfb3ae6707d~mv2_d_4600_3067_s_4_2.jpg" alt="">
-<br>
-<img class="img-responsive" src="https://static.wixstatic.com/media/61003f_571f0f9225034dc8907a3bb13b599eba~mv2_d_5141_2892_s_4_2.jpg/v1/fill/w_2400,h_1350,al_c,q_90,usm_0.66_1.00_0.01/61003f_571f0f9225034dc8907a3bb13b599eba~mv2_d_5141_2892_s_4_2.jpg" alt="">
+                <img class="img-responsive" src="https://static.wixstatic.com/media/61003f_11698b6d26dc47df8c6fedfb3ae6707d~mv2_d_4600_3067_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_11698b6d26dc47df8c6fedfb3ae6707d~mv2_d_4600_3067_s_4_2.jpg"
+                    alt="">
+                    <img class="img-responsive" src="https://static.wixstatic.com/media/61003f_571f0f9225034dc8907a3bb13b599eba~mv2_d_5141_2892_s_4_2.jpg/v1/fill/w_2400,h_1350,al_c,q_90,usm_0.66_1.00_0.01/61003f_571f0f9225034dc8907a3bb13b599eba~mv2_d_5141_2892_s_4_2.jpg"
+                        alt="">
 
     </div>
 
