@@ -2,7 +2,7 @@ html * {
     font-family: 'work sans';
 }
 
-.container.content-container {
+.container-fluid.content-container {
     max-width: 850px;
 }
 
@@ -13,4 +13,13 @@ html * {
 
 .nav.navbar-nav li a:hover {
     background-color: #f2f2f2;
+}
+
+.info {
+    font-size: 20px;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
 }
