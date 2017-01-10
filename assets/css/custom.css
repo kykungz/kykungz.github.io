@@ -14,6 +14,11 @@ html * {
 .nav.navbar-nav li a:hover {
     background-color: #f2f2f2;
 }
+.navbar-brand a {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 
 .info {
     font-size: 20px;
