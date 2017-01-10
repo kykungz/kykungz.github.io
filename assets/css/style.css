@@ -1,0 +1,16 @@
+html * {
+    font-family: 'work sans';
+}
+
+.container.content-container {
+    max-width: 850px;
+}
+
+.nav.navbar-nav li a {
+    color: #373737;
+    font-size: 18px;
+}
+
+.nav.navbar-nav li a:hover {
+    background-color: #f2f2f2;
+}
