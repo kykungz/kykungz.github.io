@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 
 </head>
 
@@ -29,13 +29,13 @@
                 </a>
             </div>
             <div class="nav navbar-right">
-                <button type="button" class="navbar-toggle" name="button" data-toggle="collapse" data-target="#myNavbar">
+                <button id="mobile-nav-btn" type="button" class="navbar-toggle" name="button" data-toggle="collapse" data-target="#myCollapsible">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse" id="myCollapsible">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="#home">
@@ -84,7 +84,7 @@
         <div class="content-container container-fluid">
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="img-responsive center-block" src="/assets/images/portrait.png" alt="">
+                    <img class="img-responsive center-block" src="assets/images/portrait.png" alt="">
                 </div>
                 <div class="col-sm-8">
                     <div class="text-center">
@@ -295,29 +295,28 @@
     </script>
     <script type="text/javascript">
         $(function() {
+            $("#myNavbar a").on('click', function(event) {
+              $('#myCollapsible').collapse('hide');
 
-        });
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-        $("#myNavbar a").on('click', function(event) {
+                    // Store hash
+                    var hash = this.hash;
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - $("#home").attr('data-offset') + 5
+                    }, 800, function() {
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                }
 
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top - $("#home").attr('data-offset') + 5
-                }, 800, function() {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            }
+            });
 
         });
     </script>
