@@ -32,3 +32,13 @@ html * {
     font-size: 25px;
     text-decoration: none !important;
 }
+
+.textbox {
+    border-radius: 20px;
+    background-color: #f7f7f7;
+}
+
+.textbox-dark {
+    border-radius: 20px;
+    background-color: #eaeaea;
+}
