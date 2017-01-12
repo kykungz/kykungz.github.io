@@ -395,7 +395,7 @@
 
 
     <footer>
-        <div  class="content-container container-fluid">
+        <div class="content-container container-fluid">
             <hr>
 
             <br>
@@ -411,11 +411,12 @@
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
 
-
-
-            $(document).scroll(function() {
+            $(document).on('touchstart', function() {
               $('[data-toggle="tooltip"]').tooltip('hide');
+
             });
+
+            $(document).scroll(function() {});
 
             $("#myNavbar a").on('click', function(event) {
                 event.preventDefault();
