@@ -353,7 +353,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-4 center-block">
-                                    <a class="social-icon text-center" data-toggle="tooltip" title="facebook.com/kykungz" href="https://facebook.com/kykungz/" target="_blank">
+                                    <a class="social-icon text-center" data-toggle="tooltip" title="fb://profile/kykungz" href="https://facebook.com/kykungz/" target="_blank">
                                         <i class="fa fa-facebook-square"></i> Facebook
                                     </a>
                                 </div>
@@ -410,6 +410,11 @@
     <script type="text/javascript">
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
+
+            $('#document').on('click', function() {
+              $('[data-toggle="tooltip"]').tooltip('hide');
+            });
+
             $("#myNavbar a").on('click', function(event) {
                 event.preventDefault();
                 $('#myCollapsible').collapse('hide');
