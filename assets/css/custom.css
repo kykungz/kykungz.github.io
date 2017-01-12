@@ -2,30 +2,6 @@ html * {
     font-family: 'work sans';
 }
 
-@media screen and (max-width: 568px) {
-    h1 {
-        font-size: 30px; /*default= 35px*/
-    }
-    h2 {
-        font-size: 25px;/*default = 30px*/
-    }
-    h3 {
-      font-size: 20px; /*default = 25px*/
-    }
-}
-
-@media (max-width: @screen-xs) {
-    h1 {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: @screen-sm) {
-    body {
-        font-size: 14px;
-    }
-}
-
 .container-fluid.content-container {
     max-width: 850px;
 }
