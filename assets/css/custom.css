@@ -5,9 +5,11 @@ html * {
 .container-fluid.content-container {
     max-width: 850px;
 }
-.content-container.img-container {
-  max-width: 700px;
+
+.container-fluid.img-container {
+    max-width: 700px;
 }
+
 .nav.navbar-nav li a {
     color: #373737;
     font-size: 18px;
