@@ -2,7 +2,7 @@ html * {
     font-family: 'work sans';
 }
 
-.container-fluid.content-container {
+.content-container {
     max-width: 850px;
 }
 
@@ -41,8 +41,4 @@ html * {
 .textbox-dark {
     border-radius: 20px;
     background-color: #eaeaea;
-}
-
-.img-responsive.project-image {
-    max-width: 750px;
 }
