@@ -42,6 +42,7 @@ html * {
     border-radius: 20px;
     background-color: #eaeaea;
 }
-.project-image {
-  max-width: 750px;
+
+.img-responsive.project-image {
+    max-width: 750px;
 }
