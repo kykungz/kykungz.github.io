@@ -7,7 +7,7 @@ html * {
 }
 
 .img-container {
-    max-width: 700px !important;
+    max-width: 700px;
 }
 
 .nav.navbar-nav li a {
