@@ -2,615 +2,636 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/assets/images/favicons/manifest.json">
-    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#000000">
-    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./assets/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./assets/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="./assets/images/favicons/manifest.json">
+  <link rel="mask-icon" href="./assets/images/favicons/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="./assets/images/favicons/favicon.ico">
+  <meta name="msapplication-config" content="./assets/images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-    <title>Kongpon C</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://use.fontawesome.com/f06c8360e2.js"></script>
-    <link rel="stylesheet" href="/assets/css/custom.css">
+  <title>Kongpon C</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/f06c8360e2.js"></script>
+  <link rel="stylesheet" href="./assets/css/custom.css">
 
 </head>
 
 <body id="home" style="padding-top:70px;" data-spy="scroll" data-target=".navbar" data-offset="70" class="index">
-    <!-- Padding-->
+  <!-- Padding-->
 
-    <!-- Navigation Bar -->
-    <div id="myNavbar" class="navbar navbar-default navbar-fixed-top">
-        <div style="background-color:white;">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a style="color:black;text-decoration: none;" href="#home">
+  <!-- Navigation Bar -->
+  <div id="myNavbar" class="navbar navbar-default navbar-fixed-top">
+    <div style="background-color:white;">
+      <div class="container">
+        <div class="navbar-brand">
+          <a style="color:black;text-decoration: none;" href="#home">
                         <span class="fa fa-code"></span>
                         <b style="font-size:20px;">Kongpon</b>
                         <span style="color:#ffa800" class="fa fa-copyright"></span>
                     </a>
-                </div>
-                <div class="nav navbar-right">
-                    <button id="mobile-nav-btn" type="button" class="navbar-toggle" name="button" data-toggle="collapse" data-target="#myCollapsible">
+        </div>
+        <div class="nav navbar-right">
+          <button id="mobile-nav-btn" type="button" class="navbar-toggle" name="button" data-toggle="collapse" data-target="#myCollapsible">
                           <span class="glyphicon glyphicon-triangle-bottom"></span>
                   </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myCollapsible">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#home">
+        </div>
+        <div class="collapse navbar-collapse" id="myCollapsible">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#home">
                                 <span class="fa fa-home" aria-hidden="true"></span> Home
                             </a>
-                        </li>
-                        <li>
-                            <a href="#about">
+            </li>
+            <li>
+              <a href="#about">
                                 <span class="fa fa-user-circle-o" aria-hidden="true"></span> About
                             </a>
-                        </li>
-                        <li>
-                            <a href="#achievements">
+            </li>
+            <li>
+              <a href="#achievements">
                                 <span class="fa fa-star" aria-hidden="true"></span> Achievements
                             </a>
-                        </li>
-                        <li>
-                            <a href="#projects">
+            </li>
+            <li>
+              <a href="#projects">
                                 <span class="fa fa-th" aria-hidden="true"></span> Projects
                             </a>
-                        </li>
-                        <li>
-                            <a href="#contact">
+            </li>
+            <li>
+              <a href="#contact">
                                 <span class="fa fa-send" aria-hidden="true"></span> Contact
                             </a>
-                        </li>
+            </li>
 
-                    </ul>
-                </div>
-
-            </div>
+          </ul>
         </div>
+
+      </div>
     </div>
-    <!-- End Navigation Bar-->
+  </div>
+  <!-- End Navigation Bar-->
 
+  <!-- Content -->
+  <div id="myJumbo" style="background-image:url('https://i.imgur.com/UZKEjzG.png');background-size: 100% 100%;" class="jumbotron">
+    <div style="padding-bottom:2%;" class="container">
+      <h1><strong>Kongpon C.</strong></h1>
+      <h3>Software Developer</h3>
+    </div>
+  </div>
 
-    <!-- Content -->
-
-    <div id="myJumbo" style="background-image:url('https://i.imgur.com/UZKEjzG.png');background-size: 100% 100%;" class="jumbotron">
-        <div style="padding-bottom:2%;" class="container">
-            <h1><strong>Kongpon C.</strong></h1>
-            <h3>Software Developer</h3>
+  <section id="about">
+    <div class="content-container container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <img width="260" class="img-responsive center-block" src="./assets/images/portrait.png" alt="">
         </div>
-    </div>
+        <div class="col-sm-8">
+          <div class="text-center">
 
-    <section id="about">
-        <div class="content-container container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img width="260" class="img-responsive center-block" src="/assets/images/portrait.png" alt="">
-                </div>
-                <div class="col-sm-8">
-                    <div class="text-center">
-
-                        <h1><b>Kongpon Charanwattanakit</b>
+            <h1><b>Kongpon Charanwattanakit</b>
                           <br>
                           <small>Software Developer</small>
                         </h1>
-                        <div class="container-fluid description textbox">
-                            <p style="padding-top:2%">Hi, my name is <b>Jacky</b>. I'm a software engineering student from Kasetsart University, Thailand. I am currently looking for an internship in a software development company. My strongest language is Java, but I'm also happy
-                                to learn new technologies and frameworks!</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="container-fluid description textbox">
+              <p style="padding-top:2%">Hi, my name is <b>Jacky</b>. I'm a software engineering student from Kasetsart University, Thailand. I am currently looking for an internship in a software development company. My strongest language is Java, but I'm also happy to learn new
+                technologies and frameworks!</p>
             </div>
-            <br>
-            <div class="page-header">
-                <h1><b>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <div class="page-header">
+        <h1><b>
                 <i class="fa fa-user-circle-o"></i>
                 Personal Information</b></h1>
+      </div>
+      <div class="container-fluid">
+        <div class="row info">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                Firstname:
+              </div>
+              <div class="col-xs-6 text-right">
+                Kongpon
+              </div>
             </div>
-            <div class="container-fluid">
-                <div class="row info">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-xs-6 text-left">
-                                Firstname:
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                Kongpon
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-4 text-left">
-                                Lastname:
-                            </div>
-                            <div class="col-xs-8 text-right">
-                                Charanwattanakit
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 text-left">
-                                Nickname:
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                Jacky
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 text-left">
-                                Nationality:
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                Thai
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-xs-6 text-left">
-                                Date of birth:
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                29 Jan 1998
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 text-left">
-                                Language:
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                Thai (Native)
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 text-left">
-
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                English
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-4 text-left">
-                                Education:
-                            </div>
-                            <div class="col-xs-8 text-right">
-                                Kasetsart University
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row">
+              <div class="col-xs-4 text-left">
+                Lastname:
+              </div>
+              <div class="col-xs-8 text-right">
+                Charanwattanakit
+              </div>
             </div>
-            <hr>
-            <div class="page-header">
-                <h1><b>
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                Nickname:
+              </div>
+              <div class="col-xs-6 text-right">
+                Jacky
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                Nationality:
+              </div>
+              <div class="col-xs-6 text-right">
+                Thai
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                Date of birth:
+              </div>
+              <div class="col-xs-6 text-right">
+                29 Jan 1998
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                Language:
+              </div>
+              <div class="col-xs-6 text-right">
+                Thai (Native)
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-left">
+
+              </div>
+              <div class="col-xs-6 text-right">
+                English
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 text-left">
+                Education:
+              </div>
+              <div class="col-xs-8 text-right">
+                Kasetsart University
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="page-header">
+        <h1><b>
                 <i class="fa fa-tasks"></i>
                 Skills
               </b></h1>
-            </div>
-            <div class="container-fluid">
-                <h2>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <strong>JAVA</strong>
-                            <span class="glyphicon glyphicon-king"></span>
-                        </div>
-                        <div style="margin-top:10px;" class="col-sm-8">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-danger" style="width: 95%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <strong>Python</strong>
-                            <span class="glyphicon glyphicon-queen"></span>
-                        </div>
-                        <div style="margin-top:10px;" class="col-sm-8">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning" style="width: 85%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <strong>Javascript</strong>
-                            <span class="glyphicon glyphicon-knight"></span>
-                        </div>
-                        <div style="margin-top:10px;" class="col-sm-8">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success" style="width: 80%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <div class="container-fluid">
 
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <strong>HTML+CSS</strong>
-                            <span class="glyphicon glyphicon-tower"></span>
-                        </div>
-                        <div style="margin-top:10px;" class="col-sm-8">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success" style="width: 70%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <strong>Swift</strong>
-                            <span class="glyphicon glyphicon-bishop"></span>
-                        </div>
-                        <div style="margin-top:10px;" class="col-sm-8">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info" style="width: 60%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </h2>
+        <div class="row">
+          <h2 style="margin-top:16px;" class="col-sm-4">
+            <strong>Java</strong>
+            <span class="glyphicon glyphicon-king"></span><br>
+          </h2>
+          <div class="col-sm-8">
+            <h4>Android, Swing, Socket</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger" style="width: 95%">
+              </div>
             </div>
+          </div>
         </div>
-        <br>
-    </section>
-    <hr>
-    <section id="achievements">
-        <div class="content-container container-fluid">
-            <div class="page-header">
-                <h1><strong>
+        <div class="row">
+          <h2 style="margin-top:16px;" class="col-sm-4">
+            <strong>Javascript</strong>
+            <span class="glyphicon glyphicon-knight"></span>
+          </h2>
+          <div class="col-sm-8">
+            <h4>jQuery, Node.js, Express, Socket.io, Vue.js, Vuex</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width: 85%">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 style="margin-top:16px;" class="col-sm-4">
+            <strong>HTML+CSS</strong>
+            <span class="glyphicon glyphicon-tower"></span>
+          </h2>
+          <div class="col-sm-8">
+            <h4>Bootstrap, Vue.js, Vuex</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 style="margin-top:16px;" class="col-sm-4">
+            <strong>Python</strong>
+            <span class="glyphicon glyphicon-queen"></span>
+          </h2>
+          <div class="col-sm-8">
+            <h4>Arduino, pandas, pylab, numpy</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" style="width: 75%">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 style="margin-top:16px;" class="col-sm-4">
+            <strong>Swift</strong>
+            <span class="glyphicon glyphicon-bishop"></span>
+          </h2>
+          <div class="col-sm-8">
+            <h4>Storyboard</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" style="width: 60%">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+  </section>
+  <hr>
+  <section id="achievements">
+    <div class="content-container container-fluid">
+      <div class="page-header">
+        <h1><strong>
                   <span class="fa fa-star" aria-hidden="true"></span>
                   Achievements
                 </strong></h1>
-            </div>
-            <br>
-            <div id="localhackday">
-                <div class="container-fluid textbox-dark">
-                    <h2><b>
+      </div>
+      <br>
+      <div id="localhackday">
+        <div class="container-fluid textbox-dark">
+          <h2><b>
                     <i class="fa fa-trophy"></i>
                     First place "Local Hack Day 2016"</b></h2>
-                </div>
+        </div>
 
-                <h3 class="text-center">Student Hackathon hosted by
+        <h3 class="text-center">Student Hackathon hosted by
                   <img width="30%",height="30%"src="https://crossbrowsertesting.com/design/images/github-logo.png" alt="">
                 </h3>
-                <br>
-                <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_e677bd4de94c46ce99094544c620792f~mv2_d_4688_3125_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_e677bd4de94c46ce99094544c620792f~mv2_d_4688_3125_s_4_2.jpg">
-                <a href="https://localhackday.mlh.io/" target="_blank">
+        <br>
+        <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_e677bd4de94c46ce99094544c620792f~mv2_d_4688_3125_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_e677bd4de94c46ce99094544c620792f~mv2_d_4688_3125_s_4_2.jpg">
+        <a href="https://localhackday.mlh.io/" target="_blank">
                     <img id="localhackday_anchor" class="img-responsive center-block" src="https://localhackday.mlh.io/img/facebook-20161107.png" alt="">
                 </a>
-                <div id="hidden_images">
-                    <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_f37b1d01f3354a3ca1ed81a1d1a41c7d~mv2_d_5472_3078_s_4_2.jpg/v1/fill/w_2400,h_1350,al_c,q_90,usm_0.66_1.00_0.01/61003f_f37b1d01f3354a3ca1ed81a1d1a41c7d~mv2_d_5472_3078_s_4_2.jpg">
-                    <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_c1de1f9cfbf042ddb3217a07bf48cec8~mv2_d_4663_3109_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_c1de1f9cfbf042ddb3217a07bf48cec8~mv2_d_4663_3109_s_4_2.jpg">
-                    <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_11698b6d26dc47df8c6fedfb3ae6707d~mv2_d_4600_3067_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_11698b6d26dc47df8c6fedfb3ae6707d~mv2_d_4600_3067_s_4_2.jpg">
-                    <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_571f0f9225034dc8907a3bb13b599eba~mv2_d_5141_2892_s_4_2.jpg/v1/fill/w_2400,h_1350,al_c,q_90,usm_0.66_1.00_0.01/61003f_571f0f9225034dc8907a3bb13b599eba~mv2_d_5141_2892_s_4_2.jpg">
-                </div>
-                <button id="show_btn" type="button" class="btn btn-primary btn-block">
+        <div id="hidden_images">
+          <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_f37b1d01f3354a3ca1ed81a1d1a41c7d~mv2_d_5472_3078_s_4_2.jpg/v1/fill/w_2400,h_1350,al_c,q_90,usm_0.66_1.00_0.01/61003f_f37b1d01f3354a3ca1ed81a1d1a41c7d~mv2_d_5472_3078_s_4_2.jpg">
+          <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_c1de1f9cfbf042ddb3217a07bf48cec8~mv2_d_4663_3109_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_c1de1f9cfbf042ddb3217a07bf48cec8~mv2_d_4663_3109_s_4_2.jpg">
+          <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_11698b6d26dc47df8c6fedfb3ae6707d~mv2_d_4600_3067_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_11698b6d26dc47df8c6fedfb3ae6707d~mv2_d_4600_3067_s_4_2.jpg">
+          <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_571f0f9225034dc8907a3bb13b599eba~mv2_d_5141_2892_s_4_2.jpg/v1/fill/w_2400,h_1350,al_c,q_90,usm_0.66_1.00_0.01/61003f_571f0f9225034dc8907a3bb13b599eba~mv2_d_5141_2892_s_4_2.jpg">
+        </div>
+        <button id="show_btn" type="button" class="btn btn-primary btn-block">
                   <span id="show_btn_text">Show more</span> <span id="show_btn_caret"class="fa fa-caret-down"></span>
                 </button>
 
-            </div>
-            <hr>
-            <div id="interview">
-                <div class="container-fluid textbox-dark">
-                    <h2><b>
+      </div>
+      <hr>
+      <div id="interview">
+        <div class="container-fluid textbox-dark">
+          <h2><b>
                   <i class="fa fa-newspaper-o"></i>
                   Being interviewed by PostToday Magazine
                 </b></h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img class="img-responsive center-block" src="/assets/images/news1.jpg">
-                    </div>
-                    <div class="col-sm-6">
-                        <img class="img-responsive center-block" src="/assets/images/news2.jpg">
-                    </div>
-                </div>
-            </div>
         </div>
-        <br>
-    </section>
-    <hr>
-    <section id="projects">
-        <div class="content-container container-fluid">
-            <div class="page-header">
-                <h1><strong>
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-responsive center-block" src="./assets/images/news1.jpg">
+          </div>
+          <div class="col-sm-6">
+            <img class="img-responsive center-block" src="./assets/images/news2.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+  <hr>
+  <section id="projects">
+    <div class="content-container container-fluid">
+      <div class="page-header">
+        <h1><strong>
                   <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
                   Projects
                 </strong></h1>
 
-            </div>
-            <div class="container-fluid textbox-dark">
-                <h2><strong>Highschool</strong></h2>
-            </div>
-            <br>
-            <div id="remember_me">
-                <div class="img-container center-block">
-                    <img class="img-responsive " src="/assets/images/projects/remember_me.png" alt="">
-                </div>
-
-                <h2><strong><u>Remember Me</u></strong> (Python)</h2>
-                <h3><strong>Grade 11</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;This project is my first project in programming. It is a flashcards reader/builder where users can build their own flashcards and review it. The GUI is built using Python's Tkinter package.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div id="eggs">
-                <div class="img-container center-block">
-                    <img class="img-responsive " src="/assets/images/projects/egg.png" alt="">
-                </div>
-                <h2><strong><u>All About Eggs</u></strong> (Swift)</h2>
-                <h3><strong>Grade 11</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;All About Eggs is an iOS application that helps users to make quality eggs. This application is for people who have no idea about cooking, and they want to learn the easiest way to cook an egg. The users can choose how boiled the york will be, and the application will calculate an oppropriate timing for the boiling.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div id="reversi">
-                <div class="img-container center-block">
-                    <img class="img-responsive" src="/assets/images/projects/reversi_banner.png" alt="">
-                    <img class="img-responsive center-block" src="/assets/images/projects/reversifull.gif" alt="">
-                </div>
-
-                <h2><strong><u>Reversi</u></strong> (Java)</h2>
-                <h3><strong>Grade 11</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;This is my first Java GUI application; It is a Reversi board game or some people might call it "Othello". The most challenging part is the hint that shows legal moves to the users.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div id="chat">
-                <div class="img-container center-block">
-                    <img class="img-responsive " src="/assets/images/projects/chat.png" alt="">
-                </div>
-                <h2><strong><u>Multi-client Chat</u></strong> (Java)</h2>
-                <h3><strong>Grade 12</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;This is a client-server chat applicaiton. The most challenging part in this project is to manage all the sockets and data stream so that the dedicated server can handle every message from each client and forward it to all the clients.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div id="pong">
-                <div class="img-container center-block">
-                    <img class="img-responsive" src="/assets/images/projects/pong_banner.png" alt="">
-                    <img class="img-responsive center-block" src="/assets/images/projects/pong_full.gif" alt="">
-                </div>
-                <h2><strong><u>Pong Online</u></strong> (Java)</h2>
-                <h3><strong>Grade 12</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;Pong is my very first game using java graphics painting. After I finished with it, I used my knowledge about socking programming to make this game become online. So instead of sending messages like my previous project, the position of the ball and paddles are being sent.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div id="spacefighter">
-                <div class="img-container center-block">
-                    <img class="img-responsive " src="/assets/images/projects/spacefighter_banner.png" alt="">
-                    <br>
-                    <img class="img-responsive center-block" src="/assets/images/projects/spacefighter.gif" alt="">
-                </div>
-
-                <h2><strong><u>Space Fighter</u></strong> (Java)</h2>
-                <h3><strong>Grade 12</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;This project is for me to practice my OOP skills, by making a more complicated game which involves many objects (enemies, bullets, etc). I also learned how to code effectively in this project.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div id="savedaturtle">
-                <div class="img-container center-block">
-                    <img class="img-responsive " src="/assets/images/projects/savedaturtle.png" alt="">
-                </div>
-                <h2><strong><u>Save da Turtle</u></strong> (Java-Android)</h2>
-                <h3><strong>Grade 12</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;After making all the Java desktop-side, I started to think about moving to another platform. Save da Turtle is my first Mobile application using Android Studio. The point of this game is to save (tap) as much tutles as you can with in an amount of time. The turtle will randomly spawn in the lane when the user successfully tap on a turtle.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="container-fluid textbox-dark">
-                <h2><strong>Capstone Project</strong></h2>
-            </div>
-            <br>
-            <div id="alife">
-                <div class="img-container center-block">
-                    <img class="img-responsive " src="" alt="No image yet.">
-                </div>
-                <h2><strong><u>A-Life</u></strong> (Java)</h2>
-                <h3><strong>Grade 12</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;This is the hardest project that I have ever made. It is a prey-predator simulations which you can spawn animals with your own optimization (speed, size, color, food, etc). Each animal will move on their own, based on normal animals' instinct. It will find food, run from predators, reproduce, and gather in groups. This project is not a game, but it is used as interactive-learning tools, so the users can study the effects of changing the environment (add new species, remove some species).
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="container-fluid textbox-dark">
-                <h2><strong>College</strong></h2>
-            </div>
-            <br>
-            <div id="whack">
-                <div class="img-container center-block">
-                    <img class="img-responsive " src="./assets/images/projects/whack_banner.png" alt="">
-                    <img class="img-responsive center-block" src="/assets/images/projects/whack_full.gif" alt="">
-                </div>
-                <h2><strong><u>Whack A Mole</u></strong> (Java-Android)</h2>
-                <h3><strong>Year 1</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                        &emsp;I made this application for the semester 1 final exam. The game's goal is to tap on the mole to gain points before the time is running out. Each mole will have its own ability, for example, the red one will deduct your points, as well as you time. Te blue one gives you points but not much, but it gives you +1 second and the orange one gives you a huge amount of points.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div id="remec">
-                <div class="img-container center-block">
-                    <img class="img-responsive " src="/assets/images/projects/whack_banner.png" alt="">
-                    <img class="img-responsive center-block" src="/assets/images/projects/whack_full.gif" alt="">
-                </div>
-                <h2><strong><u>Remec</u></strong> (Java-Android &amp; Desktop)</h2>
-                <h3><strong>Year 1</strong></h3>
-                <div class="container-fluid textbox description">
-                    <p>
-                      &nbsp;<strong>Remec</strong> is an <a href="https://github.com/thitgorn/remec">open-source</a> Iot (Internet of things) application which tranforms your android device into a custom computer remote control with your own design. You can
-                				design your own remote interface and its key combinations. Decorate it with images or labels to help remember each button using the Remec desktop application and save it to your local machine. When the remote is ready, open the Remec android application
-                				to get ready for tranfering the remote design into your mobile. See <a href="https://thitgorn.github.io/remec/">project website</a>.
-                    </p>
-                </div>
-            </div>
-            <hr>
+      </div>
+      <div class="container-fluid textbox-dark">
+        <h2><strong>Highschool</strong></h2>
+      </div>
+      <br>
+      <div id="remember_me">
+        <div class="img-container center-block">
+          <img class="img-responsive " src="./assets/images/projects/remember_me.png" alt="">
         </div>
-    </section>
-    <hr>
-    <section id="contact">
-        <div class="content-container container-fluid">
-            <div class="page-header">
-                <h1><strong>
+
+        <h2><strong><u>Remember Me</u></strong> (Python)</h2>
+        <h3><strong>Grade 11</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;This project is my first project in programming. It is a flashcards reader/builder where users can build their own flashcards and review it. The GUI is built using Python's Tkinter package.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div id="eggs">
+        <div class="img-container center-block">
+          <img class="img-responsive " src="./assets/images/projects/egg.png" alt="">
+        </div>
+        <h2><strong><u>All About Eggs</u></strong> (Swift)</h2>
+        <h3><strong>Grade 11</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;All About Eggs is an iOS application that helps users to make quality eggs. This application is for people who have no idea about cooking, and they want to learn the easiest way to cook an egg. The users can choose how boiled the york will be, and
+            the application will calculate an oppropriate timing for the boiling.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div id="reversi">
+        <div class="img-container center-block">
+          <img class="img-responsive" src="./assets/images/projects/reversi_banner.png" alt="">
+          <img class="img-responsive center-block" src="./assets/images/projects/reversifull.gif" alt="">
+        </div>
+
+        <h2><strong><u>Reversi</u></strong> (Java)</h2>
+        <h3><strong>Grade 11</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;This is my first Java GUI application; It is a Reversi board game or some people might call it "Othello". The most challenging part is the hint that shows legal moves to the users.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div id="chat">
+        <div class="img-container center-block">
+          <img class="img-responsive " src="./assets/images/projects/chat.png" alt="">
+        </div>
+        <h2><strong><u>Multi-client Chat</u></strong> (Java)</h2>
+        <h3><strong>Grade 12</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;This is a client-server chat applicaiton. The most challenging part in this project is to manage all the sockets and data stream so that the dedicated server can handle every message from each client and forward it to all the clients.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div id="pong">
+        <div class="img-container center-block">
+          <img class="img-responsive" src="./assets/images/projects/pong_banner.png" alt="">
+          <img class="img-responsive center-block" src="./assets/images/projects/pong_full.gif" alt="">
+        </div>
+        <h2><strong><u>Pong Online</u></strong> (Java)</h2>
+        <h3><strong>Grade 12</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;Pong is my very first game using java graphics painting. After I finished with it, I used my knowledge about socking programming to make this game become online. So instead of sending messages like my previous project, the position of the ball and
+            paddles are being sent.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div id="spacefighter">
+        <div class="img-container center-block">
+          <img class="img-responsive " src="./assets/images/projects/spacefighter_banner.png" alt="">
+          <br>
+          <img class="img-responsive center-block" src="./assets/images/projects/spacefighter.gif" alt="">
+        </div>
+
+        <h2><strong><u>Space Fighter</u></strong> (Java)</h2>
+        <h3><strong>Grade 12</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;This project is for me to practice my OOP skills, by making a more complicated game which involves many objects (enemies, bullets, etc). I also learned how to code effectively in this project.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div id="savedaturtle">
+        <div class="img-container center-block">
+          <img class="img-responsive " src="./assets/images/projects/savedaturtle.png" alt="">
+        </div>
+        <h2><strong><u>Save da Turtle</u></strong> (Java-Android)</h2>
+        <h3><strong>Grade 12</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;After making all the Java desktop-side, I started to think about moving to another platform. Save da Turtle is my first Mobile application using Android Studio. The point of this game is to save (tap) as much tutles as you can with in an amount
+            of time. The turtle will randomly spawn in the lane when the user successfully tap on a turtle.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="container-fluid textbox-dark">
+        <h2><strong>Capstone Project</strong></h2>
+      </div>
+      <br>
+      <div id="alife">
+        <div class="img-container center-block">
+          <img class="img-responsive " src="" alt="No image yet.">
+        </div>
+        <h2><strong><u>A-Life</u></strong> (Java)</h2>
+        <h3><strong>Grade 12</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;This is the hardest project that I have ever made. It is a prey-predator simulations which you can spawn animals with your own optimization (speed, size, color, food, etc). Each animal will move on their own, based on normal animals' instinct. It
+            will find food, run from predators, reproduce, and gather in groups. This project is not a game, but it is used as interactive-learning tools, so the users can study the effects of changing the environment (add new species, remove some species).
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="container-fluid textbox-dark">
+        <h2><strong>College</strong></h2>
+      </div>
+      <br>
+      <div id="whack">
+        <div class="img-container center-block">
+          <img class="img-responsive " src="./assets/images/projects/whack_banner.png" alt="">
+          <img class="img-responsive center-block" src="./assets/images/projects/whack_full.gif" alt="">
+        </div>
+        <h2><strong><u>Whack A Mole</u></strong> (Java-Android)</h2>
+        <h3><strong>Year 1</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &emsp;I made this application for the semester 1 final exam. The game's goal is to tap on the mole to gain points before the time is running out. Each mole will have its own ability, for example, the red one will deduct your points, as well as you time.
+            Te blue one gives you points but not much, but it gives you +1 second and the orange one gives you a huge amount of points.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div id="remec">
+        <div class="img-container center-block">
+          <img class="img-responsive " src="./assets/images/projects/remec_banner.png" alt="">
+          <br>
+          <img class="img-responsive center-block" src="https://thitgorn.github.io/remec/assets/images/howto.png" alt="">
+          <br>
+          <div class="row">
+            <div class="col-sm-6">
+              <img class="img-responsive" src="https://thitgorn.github.io/remec/assets/images/welcome.png">
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <img class="img-responsive" src="https://thitgorn.github.io/remec/assets/images/search.png">
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <img class="img-responsive" src="https://thitgorn.github.io/remec/assets/images/remote.png">
+            </div>
+          </div>
+        </div>
+        <h2><strong><u>Remec</u></strong> (Java-Android &amp; Desktop)</h2>
+        <h4>(Collaborator: <a href="https://github.com/thitgorn" target="_blank">Thitiwat Thongbor</a>)</h4>
+        <h3><strong>Year 1</strong></h3>
+        <div class="container-fluid textbox description">
+          <p>
+            &nbsp;<strong>Remec</strong> is an <a target="_blank" href="https://github.com/thitgorn/remec">open-source</a> IoT (Internet of Things) application which tranforms your android device into a custom computer remote control with your own design.
+            You can design your own remote interface and its key combinations. When the remote is ready, open the Remec android application to get ready for tranfering the remote design into your mobile. See <a target="_blank" href="https://thitgorn.github.io/remec/">project website</a>.
+          </p>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+  <hr>
+  <section id="contact">
+    <div class="content-container container-fluid">
+      <div class="page-header">
+        <h1><strong>
                   <span class="fa fa-send" aria-hidden="true"></span>
                   Contact</strong></h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img width="260" class="img-responsive center-block" src="/assets/images/portrait.png" alt="">
-                </div>
-                <div class="col-sm-8">
-                    <div class="text-center">
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img width="260" class="img-responsive center-block" src="./assets/images/portrait.png" alt="">
+        </div>
+        <div class="col-sm-8">
+          <div class="text-center">
 
-                        <h1><b>Kongpon Charanwattanakit</b>
+            <h1><b>Kongpon Charanwattanakit</b>
                         <br>
                         <small>Software Developer</small>
                       </h1>
-                        <br>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-sm-4 center-block">
-                                    <a class="social-icon text-center" data-toggle="tooltip" title="facebook.com/kykungz" href="https://facebook.com/kykungz/" target="_blank">
+            <br>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4 center-block">
+                  <a class="social-icon text-center" data-toggle="tooltip" title="facebook.com/kykungz" href="https://facebook.com/kykungz/" target="_blank">
                                         <i class="fa fa-facebook-square"></i> Facebook
                                     </a>
-                                </div>
-                                <div class="col-sm-4 center-block">
-                                    <a class="social-icon text-center" data-toggle="tooltip" title="jackykongpon@gmail.com" href="mailto:jackykongpon@gmail.com" target="_blank">
+                </div>
+                <div class="col-sm-4 center-block">
+                  <a class="social-icon text-center" data-toggle="tooltip" title="jackykongpon@gmail.com" href="mailto:jackykongpon@gmail.com" target="_blank">
                                         <i class="fa fa-envelope"></i> Email
                                     </a>
-                                </div>
-                                <div class="col-sm-4 center-block">
-                                    <a class="social-icon text-center" data-toggle="tooltip" title="kykungz" href="https://line.me/ti/p/~kykungz" target="_blank">
+                </div>
+                <div class="col-sm-4 center-block">
+                  <a class="social-icon text-center" data-toggle="tooltip" title="github.com/kykungz" href="https://github.com/kykungz/" target="_blank">
+                                        <i class="fa fa-github"></i> GitHub
+                                    </a>
+                </div>
+
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-4 center-block">
+                  <a class="social-icon text-center" data-toggle="tooltip" title="kykungz" href="https://line.me/ti/p/~kykungz" target="_blank">
                                         <i class="fa fa-commenting"></i> Line
                                     </a>
 
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-sm-4 center-block">
-                                    <a class="social-icon text-center" data-toggle="tooltip" title="github.com/kykungz" href="https://github.com/kykungz/" target="_blank">
-                                        <i class="fa fa-github"></i> GitHub
-                                    </a>
-                                </div>
-                                <div class="col-sm-3 center-block">
-                                    <a class="social-icon text-center" data-toggle="tooltip" href="javascript:void(0)">
+                </div>
+                <div class="col-sm-3 center-block">
+                  <a class="social-icon text-center" data-toggle="tooltip" href="javascript:void(0)">
                                         <i class="fa fa-skype"></i> Skype
                                     </a>
-                                </div>
-                                <div class="col-sm-5 center-block">
-                                    <a class="social-icon text-center" data-toggle="tooltip" title="instagram.com/jackykpc" href="instagram://user?username=jackykpc">
+                </div>
+                <div class="col-sm-5 center-block">
+                  <a class="social-icon text-center" data-toggle="tooltip" title="instagram.com/jackykpc" href="instagram://user?username=jackykpc">
                                         <i class="fa fa-instagram"></i> Instagram
                                     </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
+              </div>
+
             </div>
-            <hr>
+          </div>
         </div>
+      </div>
+      <hr>
+    </div>
 
-    </section>
+  </section>
 
-    <footer>
-        <div style="padding-top:20px;" class="content-container container-fluid text-right">
-            <h3>
+  <footer>
+    <div style="padding-top:20px;" class="content-container container-fluid text-right">
+      <h3>
               <small>
                 Made by Kongpon Charanwattanakit
                 <span class="fa fa-copyright"></span>
                 2017
               </small>
             </h3>
-        </div>
-    </footer>
+    </div>
+  </footer>
 
 
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip();
+  <script type="text/javascript">
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip();
 
-            $(document).on('touchstart', function() {
-                $('[data-toggle="tooltip"]').tooltip('hide');
+      $(document).on('touchstart', function() {
+        $('[data-toggle="tooltip"]').tooltip('hide');
 
-            });
+      });
 
-            $("#hidden_images").hide();
-            $("#hidden_images img").hide();
+      $("#hidden_images").hide();
+      $("#hidden_images img").hide();
 
-            $("#show_btn").on('click', function(e) {
-                var offset = $(window).scrollTop();
-                if ($('#show_btn_text').text() === 'Show more') {
-                    $('#show_btn_text').text('Hide');
-                    offset = $("#show_btn").offset().top;
-                } else {
-                    $('#show_btn_text').text('Show more');
-                }
-                $('#show_btn_caret').toggleClass('fa-caret-down fa-caret-up');
-                $("#hidden_images img").fadeToggle(800);
-                $("#hidden_images").slideToggle(800);
-                $('html, body').animate({
-                    scrollTop: offset - $('#hidden_images').height()
-                }, 800);
-            });
+      $("#show_btn").on('click', function(e) {
+        var offset = $(window).scrollTop();
+        if ($('#show_btn_text').text() === 'Show more') {
+          $('#show_btn_text').text('Hide');
+          offset = $("#show_btn").offset().top;
+        } else {
+          $('#show_btn_text').text('Show more');
+        }
+        $('#show_btn_caret').toggleClass('fa-caret-down fa-caret-up');
+        $("#hidden_images img").fadeToggle(800);
+        $("#hidden_images").slideToggle(800);
+        $('html, body').animate({
+          scrollTop: offset - $('#hidden_images').height()
+        }, 800);
+      });
 
-            $("#myNavbar a").on('click', function(event) {
-                event.preventDefault();
-                $('#myCollapsible').collapse('hide');
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top - $("#home").attr('data-offset') + 1
-                }, 800);
-            });
+      $("#myNavbar a").on('click', function(event) {
+        event.preventDefault();
+        $('#myCollapsible').collapse('hide');
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - $("#home").attr('data-offset') + 1
+        }, 800);
+      });
 
-        });
-    </script>
+    });
+  </script>
 </body>
 
 </html>
