@@ -2,6 +2,12 @@ html * {
     font-family: 'work sans';
 }
 
+#jumbotron-header {
+  /* background-image:url('https://i.imgur.com/UZKEjzG.png'); */
+  background-image: url('../images/header-blur.png');
+  background-size: 100% 100%;
+}
+
 .container-fluid.content-container {
     max-width: 850px;
 }
