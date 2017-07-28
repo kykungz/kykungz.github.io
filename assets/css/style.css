@@ -12,6 +12,10 @@ html * {
   box-shadow: 1px 0px 4px rgb(148, 148, 148);
 }
 
+.vertical-center {
+  vertical-align: middle;
+}
+
 .container-fluid.content-container {
     max-width: 850px;
 }
