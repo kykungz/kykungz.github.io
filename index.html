@@ -14,26 +14,30 @@
   <meta name="msapplication-config" content="./assets/images/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Kongpon C</title>
+  <title>Kongpon's Portfolio</title>
+
+  <script src="./js/init.js" charset="utf-8"></script>
+  <!-- jquery-3-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- PACE.js -->
+  <script src="./lib/js/pace.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="./lib/css/pace.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <!-- Icons -->
   <script src="https://use.fontawesome.com/f06c8360e2.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <!-- jquery-3-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
+  <script src="./js/index.js" charset="utf-8"></script>
 </head>
 
 <body id="home" style="padding-top:50px;" data-spy="scroll" data-target=".navbar" data-offset="70" class="index">
-  <!-- Padding-->
-
   <!-- Navigation Bar -->
   <div id="myNavbar" class="navbar navbar-default navbar-fixed-top">
     <div style="background-color:white;">
@@ -363,13 +367,13 @@
         </div>
 
         <h3 class="text-center">Student Hackathon hosted by
-                  <img width="30%",height="30%"src="https://crossbrowsertesting.com/design/images/github-logo.png" alt="">
-                </h3>
+          &nbsp;<i style="font-size:80px"class="devicon-github-plain-wordmark colored"></i>
+        </h3>
         <br>
         <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_e677bd4de94c46ce99094544c620792f~mv2_d_4688_3125_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_e677bd4de94c46ce99094544c620792f~mv2_d_4688_3125_s_4_2.jpg">
         <a href="https://localhackday.mlh.io/" target="_blank">
-                    <img id="localhackday_anchor" class="img-responsive center-block" src="https://localhackday.mlh.io/img/facebook-20161107.png" alt="">
-                </a>
+          <img id="localhackday_anchor" class="img-responsive center-block" src="./assets/images/localhackday.png" alt="">
+        </a>
         <div id="hidden_images">
           <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_f37b1d01f3354a3ca1ed81a1d1a41c7d~mv2_d_5472_3078_s_4_2.jpg/v1/fill/w_2400,h_1350,al_c,q_90,usm_0.66_1.00_0.01/61003f_f37b1d01f3354a3ca1ed81a1d1a41c7d~mv2_d_5472_3078_s_4_2.jpg">
           <img class="img-responsive center-block" src="https://static.wixstatic.com/media/61003f_c1de1f9cfbf042ddb3217a07bf48cec8~mv2_d_4663_3109_s_4_2.jpg/v1/fill/w_2112,h_1408,al_c,q_90,usm_0.66_1.00_0.01/61003f_c1de1f9cfbf042ddb3217a07bf48cec8~mv2_d_4663_3109_s_4_2.jpg">
@@ -691,9 +695,7 @@
       </div>
       <hr>
     </div>
-
   </section>
-
   <footer>
     <div style="padding-top:20px;" class="content-container container-fluid text-right">
       <h3>
@@ -705,57 +707,5 @@
             </h3>
     </div>
   </footer>
-
-
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <script type="text/javascript">
-    $(function() {
-      $('[data-toggle="tooltip"]').tooltip();
-
-      $(document).on('touchstart', function() {
-        $('[data-toggle="tooltip"]').tooltip('hide');
-      });
-
-      $("#hidden_images").hide();
-      $("#hidden_images img").hide();
-
-      $("#show_btn").on('click', function(e) {
-        var offset = $(window).scrollTop();
-        if ($('#show_btn_text').text() === 'Show more') {
-          $('#show_btn_text').text('Hide');
-          offset = $("#show_btn").offset().top;
-        } else {
-          $('#show_btn_text').text('Show more');
-        }
-        $('#show_btn_caret').toggleClass('fa-caret-down fa-caret-up');
-        $("#hidden_images img").fadeToggle(800);
-        $("#hidden_images").slideToggle(800);
-        $('html, body').animate({
-          scrollTop: offset - $('#hidden_images').height()
-        }, 800);
-      });
-
-      $("#myNavbar a").on('click', function(event) {
-        event.preventDefault();
-        $('#myCollapsible').collapse('hide');
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top - $("#home").attr('data-offset') + 1
-        }, 800);
-      });
-
-      $(".contact").on('click', function(event) {
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top - $("#home").attr('data-offset') + 1
-        }, 600);
-      })
-
-    });
-  </script>
 </body>
-
 </html>
