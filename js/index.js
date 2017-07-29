@@ -1,8 +1,11 @@
 $(function() {
+  $(".sidebar.right").sidebar({side: "right"})
+
   $('[data-toggle="tooltip"]').tooltip();
 
   $(document).on('touchstart', function() {
     $('[data-toggle="tooltip"]').tooltip('hide');
+    $(".sidebar.right").trigger("sidebar:close");
   });
 
   $("#hidden_images").hide();
@@ -58,7 +61,6 @@ $(function() {
     }, 600);
   })
 
-  $(".sidebar.right").sidebar({side: "right"})
   $("#mobile-nav-btn").click(function() {
     $(".sidebar.right").trigger("sidebar:toggle");
   })
