@@ -5,7 +5,6 @@ $(function() {
 
   $(document).on('touchstart', function() {
     $('[data-toggle="tooltip"]').tooltip('hide');
-    $(".sidebar.right").trigger("sidebar:close");
   });
 
   $("#hidden_images").hide();
