@@ -45,7 +45,7 @@ $(function() {
 
   $("#my-sidebar a").on('click', function(event) {
     event.preventDefault();
-    $(".sidebar.right").trigger("sidebar:close");
+    $(".sidebar.right").trigger("sidebar:toggle");
     var hash = this.hash;
     $('html, body').animate({
       scrollTop: $(hash).offset().top - $("#home").attr('data-offset') + 1
