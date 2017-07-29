@@ -33,6 +33,9 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./lib/css/sidebar.css">
+  <!-- jQuery Side Bar -->
+  <script src="./lib/js/jquery.sidebar.min.js"></script>
 
   <script src="./js/index.js" charset="utf-8"></script>
 </head>
@@ -49,42 +52,53 @@
                         <span style="color:#ffa800" class="fa fa-copyright"></span>
                     </a>
         </div>
-        <div class="nav navbar-right">
-          <button id="mobile-nav-btn" type="button" class="navbar-toggle" name="button" data-toggle="collapse" data-target="#myCollapsible">
-                          <span class="glyphicon glyphicon-triangle-bottom"></span>
-                  </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myCollapsible">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#home">
-                                <span class="fa fa-home" aria-hidden="true"></span> Home
-                            </a>
-            </li>
-            <li>
-              <a href="#about">
-                                <span class="fa fa-user-circle-o" aria-hidden="true"></span> About
-                            </a>
-            </li>
-            <li>
-              <a href="#achievements">
-                                <span class="fa fa-star" aria-hidden="true"></span> Achievements
-                            </a>
-            </li>
-            <li>
-              <a href="#projects">
-                                <span class="fa fa-th" aria-hidden="true"></span> Projects
-                            </a>
-            </li>
-            <li>
-              <a href="#contact">
-                                <span class="fa fa-send" aria-hidden="true"></span> Contact
-                            </a>
-            </li>
+        <div class="hidden-xs">
+<!--           <div class="nav navbar-right">
+  <button id="mobile-nav-btn" type="button" class="navbar-toggle" name="button" data-toggle="collapse" data-target="#myCollapsible">
+                  <span class="glyphicon glyphicon-triangle-bottom"></span>
+          </button>
+</div> -->
+<!--           <div class="collapse navbar-collapse" id="myCollapsible"> -->
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#home">
+                                  <span class="fa fa-home" aria-hidden="true"></span> Home
+                              </a>
+              </li>
+              <li>
+                <a href="#about">
+                                  <span class="fa fa-user-circle-o" aria-hidden="true"></span> About
+                              </a>
+              </li>
+              <li>
+                <a href="#achievements">
+                                  <span class="fa fa-star" aria-hidden="true"></span> Achievements
+                              </a>
+              </li>
+              <li>
+                <a href="#projects">
+                                  <span class="fa fa-th" aria-hidden="true"></span> Projects
+                              </a>
+              </li>
+              <li>
+                <a href="#contact">
+                                  <span class="fa fa-send" aria-hidden="true"></span> Contact
+                              </a>
+              </li>
 
-          </ul>
+            </ul>
+          <!-- </div> -->
         </div>
-
+        <div class="visible-xs">
+          <div class="nav navbar-right">
+            <button id="mobile-nav-btn" type="button" class="navbar-toggle btn btn-default">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -707,5 +721,38 @@
             </h3>
     </div>
   </footer>
+  <div style="margin-top:50px" class="visible-xs sidebar right">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav" id="my-sidebar">
+        <li>
+          <a href="#home">
+                            <span class="fa fa-home" aria-hidden="true"></span> Home
+                        </a>
+        </li>
+        <li>
+          <a href="#about">
+                            <span class="fa fa-user-circle-o" aria-hidden="true"></span> About
+                        </a>
+        </li>
+        <li>
+          <a href="#achievements">
+                            <span class="fa fa-star" aria-hidden="true"></span> Achievements
+                        </a>
+        </li>
+        <li>
+          <a href="#projects">
+                            <span class="fa fa-th" aria-hidden="true"></span> Projects
+                        </a>
+        </li>
+        <li>
+          <a href="#contact">
+                            <span class="fa fa-send" aria-hidden="true"></span> Contact
+                        </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>
