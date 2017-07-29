@@ -4,7 +4,6 @@ $(function() {
   $('[data-toggle="tooltip"]').tooltip();
 
   $(document).on('touchstart', function() {
-    $(".sidebar.right").trigger("sidebar:close");
     $('[data-toggle="tooltip"]').tooltip('hide');
   });
 
