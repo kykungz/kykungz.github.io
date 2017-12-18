@@ -12,6 +12,10 @@ injectGlobal`
   * {
     font-family: 'work sans';
   }
+
+  .content-container {
+    max-width: 900px;
+  }
 `;
 
 ReactDOM.render(<App />, document.getElementById('root'));

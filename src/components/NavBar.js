@@ -4,13 +4,13 @@ import styled from 'styled-components';
 
 const Nav = styled.nav`
   background-color: white;
-  box-shadow: -1px -1px 3px gray;
+  box-shadow: 0 1px 1px -1px gray;
   padding: 0 !important;
 `
 const NavItem = styled.span`
   cursor: pointer;
   color: black;
-  padding: 12px;
+  padding: 13px;
   margin: 0;
   font-size: 18px;
   transition: background 200ms;
@@ -20,7 +20,7 @@ const NavItem = styled.span`
   }
 `
 const NavBar = () => (
-  <Nav className="navbar navbar-light navbar-expand-lg fixed-top">
+  <Nav className="navbar navbar-light navbar-expand-lg sticky-top">
     <div className="container">
       <a className="navbar-brand" href="/">
         <FontAwesome name="code" size="lg" />
@@ -29,7 +29,7 @@ const NavBar = () => (
         </b>
         <FontAwesome name="copyright" size="lg" style={{color: 'orange'}} />
       </a>
-      <div className="navbar-nav">
+      <div className="navbar-nav d-none d-lg-flex">
         <NavItem className="nav-item">
           <FontAwesome name='home' /> Home
         </NavItem>
