@@ -1,3 +1,4 @@
+import React from 'react'
 export const profile = {
   name: 'Kongpon Charanwattanakit',
   position: 'Software Developer',
@@ -30,23 +31,24 @@ export const information = {
       answer: 'Thai'
     },
     {
+      title: 'Blood type',
+      answer: 'AB'
+    },
+    {
       title: 'Date of birth',
       answer: '29 Jan 1998'
     },
     {
       title: 'Language',
-      answer: `Thai (Native)
-        English (Advance)
-        German (Elementary)
-      `
+      answer: <span>
+                Thai (Native)<br/>
+                English (Advance)<br/>
+                German (Elementary)<br/>
+              </span>
     },
     {
-      title: 'Nickname',
-      answer: 'Jacky'
-    },
-    {
-      title: 'Nationality',
-      answer: 'Thai'
+      title: 'Education',
+      answer: 'Kasetsart University'
     }
   ]
 }

@@ -32,7 +32,7 @@ const Profile = () => (
     <Portrait src={ portrait } alt="portrait" />
     <div className="text-center">
       <h2><b>Kongpon Charanwattanakit</b></h2>
-      <h4 className="text-muted">Software Developer</h4>
+      <h4 className="text-secondary">Software Developer</h4>
       <Description centered>{ description }</Description>
     </div>
   </Layout>

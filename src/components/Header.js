@@ -14,6 +14,10 @@ const Title = styled.div`
 
 const Name = styled.h1`
   font-size: 4em;
+
+  @media (max-width: 575px) {
+    font-size: 3em;
+  }
 `
 
 const Header = () => (
