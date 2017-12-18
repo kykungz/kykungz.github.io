@@ -1,5 +1,0 @@
-paceOptions = {
-  elements: {
-    selectors: ['img']
-  }
-}
