@@ -23,16 +23,16 @@ const Personal = () => (
   <div className="container-fluid">
     <div className="row">
       <div className="col-md">
-        { information.info.slice(0, 5).map(line =>
-          <Line>
+        { information.info.slice(0, 5).map((line, i) =>
+          <Line key={i}>
             <Left>{ line.title }:</Left>
             <Right>{ line.answer }</Right>
           </Line>
         ) }
       </div>
       <div className="col-md">
-        { information.info.slice(5).map(line =>
-            <Line>
+        { information.info.slice(5).map((line, i) =>
+            <Line key={i}>
               <Left>{ line.title }:</Left>
               <Right>{ line.answer }</Right>
             </Line>

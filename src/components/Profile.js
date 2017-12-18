@@ -8,6 +8,7 @@ const Layout = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 `
 
 const Portrait = styled.img`
