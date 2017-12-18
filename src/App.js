@@ -15,8 +15,6 @@ class App extends Component {
         <Section title="Personal Information" icon="user-circle-o">
           <Personal />
         </Section>
-
-
       </div>
     );
   }

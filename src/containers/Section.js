@@ -10,17 +10,17 @@ const Title = styled.h1`
 
 const Section = ({ children, icon, title, wide }) => (
   <div>
-    <div className="container content-container mx-auto">
+    <div className="container content-container">
       <Title>
         <FontAwesome name={ icon } />
         <b className="ml-2">{ title }</b>
       </Title>
     </div>
-    <hr className="content-container mx-auto"/>
-    <div className={ wide ? null : 'content-container mx-auto' }>
+    <hr className="content-container"/>
+    <div className={`mx-auto ${wide ? null : 'content-container'}`}>
       { children }
     </div>
-    <hr className="content-container mx-auto"/>
+    <hr className="content-container"/>
   </div>
 )
 
