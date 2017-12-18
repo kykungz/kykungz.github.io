@@ -27,12 +27,12 @@ export const information = {
       answer: 'Jacky'
     },
     {
-      title: 'Nationality',
-      answer: 'Thai'
+      title: 'Birthname',
+      answer: 'กองภณ จรัญวัฒนากิจ'
     },
     {
-      title: 'Blood type',
-      answer: 'AB'
+      title: 'Nationality',
+      answer: 'Thai'
     },
     {
       title: 'Date of birth',
