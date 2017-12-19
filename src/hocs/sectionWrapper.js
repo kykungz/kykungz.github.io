@@ -2,26 +2,24 @@ import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import styled from 'styled-components';
 
-const Title = styled.h1`
-  @media (max-width: 575px) {
-    font-size: 2em;
-  }
+const Section = styled.div`
+  margin-bottom: 40px;
 `
 
 const sectionWrapper = (Component) => ({ icon, title, wide }) => (
-  <div>
+  <Section>
     <div className="container content-container">
-      <Title>
+      <h2>
         <FontAwesome name={ icon } />
         <b className="ml-2">{ title }</b>
-      </Title>
+      </h2>
     </div>
     <hr className="content-container"/>
     <div className={`mx-auto ${wide ? null : 'content-container'}`}>
       <Component />
     </div>
     <hr className="content-container"/>
-  </div>
+  </Section>
 )
 
 export default sectionWrapper;

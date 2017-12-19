@@ -28,7 +28,7 @@ const Personal = () => (
         { information.slice(0, cutoff(information.length)).map((line, i) =>
           <Line key={i}>
             <Left>{ line.title }:</Left>
-            <Right>{ line.answer }</Right>
+            <Right lang={ line.lang }>{ line.answer }</Right>
           </Line>
         ) }
       </div>

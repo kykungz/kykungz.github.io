@@ -25,7 +25,8 @@ export const information = [
   },
   {
     title: 'Birthname',
-    answer: 'กองภณ จรัญวัฒนากิจ'
+    answer: 'กองภณ จรัญวัฒนากิจ',
+    lang: 'th'
   },
   {
     title: 'Nationality',
@@ -51,54 +52,50 @@ export const information = [
   }
 ]
 
-export const skills = {
-  icon: 'tasks',
-  topic: 'Skills',
-  info: [
-    {
-      icon: 'devicon-java-plain colored',
-      variant: 'danger',
-      language: 'Java',
-      frameworks: 'Android, Swing, Socket, IoT',
-      level: '95'
-    },
-    {
-      icon: 'devicon-javascript-plain colored',
-      variant: 'success',
-      language: 'Javascript',
-      frameworks: 'Vue.js, React, jQuery, Node, Jest, Socket.io',
-      level: '90'
-    },
-    {
-      icon: 'devicon-html5-plain colored',
-      variant: 'success',
-      language: 'HTML+CSS',
-      frameworks: 'Bootstrap, Element-UI, Sass, CSS3',
-      level: '80'
-    },
-    {
-      icon: 'devicon-python-plain colored',
-      variant: 'warning',
-      language: 'Python',
-      frameworks: 'Arduino, Tkinter, Django',
-      level: '75'
-    },
-    {
-      icon: 'devicon-ruby-plain colored',
-      variant: 'danger',
-      language: 'Ruby',
-      frameworks: 'Ruby on Rails',
-      level: '60'
-    },
-    {
-      icon: 'devicon-swift-plain colored',
-      variant: 'info',
-      language: 'Swift',
-      frameworks: 'iOS, Storyboard',
-      level: '55'
-    }
-  ]
-}
+export const skills = [
+  {
+    icon: 'devicon-java-plain colored',
+    variant: 'danger',
+    language: 'Java',
+    frameworks: 'Android, Swing, Socket, IoT',
+    level: '95'
+  },
+  {
+    icon: 'devicon-javascript-plain colored',
+    variant: 'primary',
+    language: 'Javascript',
+    frameworks: 'Vue.js, React, jQuery, Node, Jest, Socket.io',
+    level: '95'
+  },
+  {
+    icon: 'devicon-html5-plain colored',
+    variant: 'success',
+    language: 'HTML+CSS',
+    frameworks: 'Bootstrap, Element-UI, Sass, CSS3',
+    level: '80'
+  },
+  {
+    icon: 'devicon-python-plain colored',
+    variant: 'warning',
+    language: 'Python',
+    frameworks: 'Arduino, Tkinter, Django',
+    level: '75'
+  },
+  {
+    icon: 'devicon-ruby-plain colored',
+    variant: 'danger',
+    language: 'Ruby',
+    frameworks: 'Ruby on Rails',
+    level: '60'
+  },
+  {
+    icon: 'devicon-swift-plain colored',
+    variant: 'info',
+    language: 'Swift',
+    frameworks: 'iOS, Storyboard',
+    level: '55'
+  }
+]
 
 export const tools = {
   icon: 'wrench',
