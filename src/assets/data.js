@@ -1,6 +1,22 @@
 import React from 'react'
+
 import bcbk8Img from './images/bcbk8.png'
 import sellsukiImg from './images/sellsuki.png'
+
+const getImages = (event, type, limit) => {
+  let images = []
+  for(let i = 0; i < limit; i++) {
+    try {
+      images = [...images, require(`./images/${event}/${i+1}.${type}`)]
+    } catch (e) {
+      images = [...images, require(`./images/${event}/${i+1}.png`)]
+    }
+  }
+  return images
+}
+
+const lhdImages = getImages('localhackday', 'jpg', 6)
+const newsImages = getImages('news', 'jpg', 2)
 
 export const profile = {
   name: 'Kongpon Charanwattanakit',
@@ -37,7 +53,11 @@ export const information = [
   },
   {
     title: 'Nationality',
-    answer: 'Thai 🇹🇭'
+    answer: (
+      <React.Fragment>
+        Thai <span role="img" aria-label="th">🇹🇭</span>
+      </React.Fragment>
+    )
   },
   {
     title: 'Date of birth',
@@ -46,11 +66,11 @@ export const information = [
   {
     title: 'Language',
     answer: (
-      <span>
+      <React.Fragment>
         Thai (Native) <span role="img" aria-label="th">🇹🇭</span><br/>
         English (Advance) <span role="img" aria-label="en">🇺🇸</span><br/>
         German (Elementary) <span role="img" aria-label="de">🇩🇪</span><br/>
-      </span>
+      </React.Fragment>
     )
   },
   {
@@ -117,12 +137,12 @@ export const experiences = [
     image: sellsukiImg,
     info: [
       (
-        <span>
+        <React.Fragment>
           <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/akita.wh/">
             Akita Warehouse
           </a>
           &nbsp;WMS (Warehouse Management System)
-        </span>
+        </React.Fragment>
       ),
       'Fullstack',
       'Vue.js, Vuex, Jest, Node, MySQL',
@@ -144,5 +164,42 @@ export const experiences = [
       'React, Sass/SCSS',
       'November, 2017'
     ]
+  }
+]
+
+export const achievements = [
+  {
+    icon: 'trophy',
+    variant: 'danger',
+    title: (
+      <React.Fragment>
+        1<sup>st</sup> place "Local Hack Day 2016"
+      </React.Fragment>
+    ),
+    description: 'Student Hackathon hosted by GitHub and Major League Hacking (MLH)',
+    images: lhdImages.map((image, i) =>
+      <img key={i} className="img-fluid" src={ image } alt=""/>
+    )
+  },
+  {
+    icon: 'newspaper-o',
+    variant: 'info',
+    title: 'Interviewed with PostToday Magazine',
+    description: (
+      <React.Fragment>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.posttoday.com/newspaper/magazine/469861">
+          Read Article <i class="fa fa-external-link"></i>
+        </a>
+      </React.Fragment>
+    ),
+    images: (
+      <div className="row no-gutters">
+        { newsImages.map((image, i) =>
+          <div key={i} className="col-sm">
+            <img className="img-fluid" src={image} alt={image}/>
+          </div>
+        ) }
+      </div>
+    )
   }
 ]

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Description = styled.p`
-  padding: 15px;
+  padding: 8px;
   background-color: #f7f7f7;
   border-radius: 20px;
 	text-align: ${props => props.centered ? 'center' : 'left'};

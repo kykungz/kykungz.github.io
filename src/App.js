@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Profile from './components/Profile';
@@ -24,9 +25,7 @@ class App extends Component {
         <PersonalSection title="Personal Information" icon="user-circle-o" />
         <SkillSection title="Skills" icon="tasks" />
         <ExperienceSection title="Working Experiences" icon="briefcase" />
-        <hr/>
         <AchievementSection title="Achievements" icon="star"/>
-        <hr/>
       </div>
     );
   }
