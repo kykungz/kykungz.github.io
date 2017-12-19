@@ -9,8 +9,8 @@ const ImageList = styled.div`
 `
 
 const Image = styled.img`
-  max-width: 180px !important;
-  max-height: 100px;
+  max-width: 200px !important;
+  max-height: 120px;
   margin: 20px;
 `
 
@@ -18,10 +18,10 @@ const Experience = () => (
   <div className="container-fluid">
     { experiences.map((exp, i) =>
       <div key={i} className="row">
-        <ImageList className="col-sm-3">
+        <ImageList className="col-sm-4">
           <Image className="mx-auto img-fluid" key={i} src={exp.image} alt={exp.alt} />
         </ImageList>
-        <div className="col-sm-9">
+        <div className="col-sm-8">
           <h4 className="text-center text-sm-left">
             <b>{ exp.position }</b>
             <span className="d-none d-md-inline">&nbsp;</span>

@@ -5,12 +5,16 @@ import sellsukiImg from './images/sellsuki.png'
 export const profile = {
   name: 'Kongpon Charanwattanakit',
   position: 'Software Developer',
-  info: `
-    Hi, my name is <b>Jacky</b>. I am currently a software engineering student at Kasetsart University.
-    I was fascinated by the art of programming, which brought me into this challenging field.
-    I'm also looking for an internship at a software development company.
-    If you are interested in me, feel free to contact!
-  `
+  info: (
+    <span>
+      Hi, my name is <b>Jacky</b>.
+      I am currently a Software Engineering student at Kasetsart University.
+      I was fascinated by the art of programming,
+      which brought me into this challenging field.
+      I'm also looking for an internship in a software development company.
+      If you are interested in me, feel free to <a href="/">contact</a>!
+    </span>
+  )
 }
 
 export const information = [
@@ -33,7 +37,7 @@ export const information = [
   },
   {
     title: 'Nationality',
-    answer: 'Thai'
+    answer: 'Thai 🇹🇭'
   },
   {
     title: 'Date of birth',
@@ -43,9 +47,9 @@ export const information = [
     title: 'Language',
     answer: (
       <span>
-        Thai (Native)<br/>
-        English (Advance)<br/>
-        German (Elementary)<br/>
+        Thai (Native) <span role="img" aria-label="th">🇹🇭</span><br/>
+        English (Advance) <span role="img" aria-label="en">🇺🇸</span><br/>
+        German (Elementary) <span role="img" aria-label="de">🇩🇪</span><br/>
       </span>
     )
   },
