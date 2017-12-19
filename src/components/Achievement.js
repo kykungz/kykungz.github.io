@@ -1,14 +1,8 @@
 import React from 'react';
 import Title from '../containers/Title'
 import Description from '../containers/Description'
-import styled from 'styled-components';
 import { achievements } from '../assets/data'
 import withSeparator from '../hocs/withSeparator'
-
-const ImageList = styled.div`
-  padding: 0 !important;
-  text-align: center;
-`
 
 const Achievement = () => withSeparator(
   achievements.map((event, i) =>
@@ -21,9 +15,9 @@ const Achievement = () => withSeparator(
           { event.description }
         </Description>
       </div>
-      <ImageList>
+      <div className="p-0 text-center">
         { event.images }
-      </ImageList>
+      </div>
     </React.Fragment>
   )
 )
