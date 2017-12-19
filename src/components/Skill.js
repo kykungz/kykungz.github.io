@@ -17,13 +17,13 @@ const Skill = () => (
   <div className="container content-container">
     { skills.map((skill, i) =>
       <Line key={i} className="row align-items-center">
-        <div className="col-md-4">
+        <div className="col-sm-4">
           <h3 className="mb-0">
             <i className={skill.icon}></i>
             <b className="ml-2">{ skill.language }</b>
           </h3>
         </div>
-        <div className="col-md-8">
+        <div className="col-sm-8">
           <Framework>{ skill.frameworks }</Framework>
           <Progress className="progress">
             <div
