@@ -19,11 +19,13 @@ const Right = Info.extend`
   text-align: right;
 `
 
+const cutoff = (length) => length / 2 + 1
+
 const Personal = () => (
   <div className="container-fluid">
     <div className="row">
       <div className="col-md">
-        { information.info.slice(0, 5).map((line, i) =>
+        { information.slice(0, cutoff(information.length)).map((line, i) =>
           <Line key={i}>
             <Left>{ line.title }:</Left>
             <Right>{ line.answer }</Right>
@@ -31,7 +33,7 @@ const Personal = () => (
         ) }
       </div>
       <div className="col-md">
-        { information.info.slice(5).map((line, i) =>
+        { information.slice(cutoff(information.length)).map((line, i) =>
             <Line key={i}>
               <Left>{ line.title }:</Left>
               <Right>{ line.answer }</Right>

@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Profile from './components/Profile';
-import Section from './containers/Section';
 import Personal from './components/Personal';
+
+import sectionWrapper from './hocs/sectionWrapper';
+
+const PersonalSection = sectionWrapper(Personal)
 
 class App extends Component {
   render() {
@@ -12,9 +15,7 @@ class App extends Component {
         <NavBar />
         <Header />
         <Profile />
-        <Section title="Personal Information" icon="user-circle-o">
-          <Personal />
-        </Section>
+        <PersonalSection title="Personal Information" icon="user-circle-o" />
       </div>
     );
   }

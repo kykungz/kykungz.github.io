@@ -8,7 +8,7 @@ const Title = styled.h1`
   }
 `
 
-const Section = ({ children, icon, title, wide }) => (
+const sectionWrapper = (Component) => ({ icon, title, wide }) => (
   <div>
     <div className="container content-container">
       <Title>
@@ -18,10 +18,10 @@ const Section = ({ children, icon, title, wide }) => (
     </div>
     <hr className="content-container"/>
     <div className={`mx-auto ${wide ? null : 'content-container'}`}>
-      { children }
+      <Component />
     </div>
     <hr className="content-container"/>
   </div>
 )
 
-export default Section;
+export default sectionWrapper;

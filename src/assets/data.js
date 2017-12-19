@@ -10,48 +10,46 @@ export const profile = {
   `
 }
 
-export const information = {
-  icon: 'user-circle-o',
-  topic: 'Personal Information',
-  info: [
-    {
-      title: 'Firstname',
-      answer: 'Kongpon'
-    },
-    {
-      title: 'Lastname',
-      answer: 'Charanwattanakit'
-    },
-    {
-      title: 'Nickname',
-      answer: 'Jacky'
-    },
-    {
-      title: 'Birthname',
-      answer: 'กองภณ จรัญวัฒนากิจ'
-    },
-    {
-      title: 'Nationality',
-      answer: 'Thai'
-    },
-    {
-      title: 'Date of birth',
-      answer: '29 Jan 1998'
-    },
-    {
-      title: 'Language',
-      answer: <span>
-                Thai (Native)<br/>
-                English (Advance)<br/>
-                German (Elementary)<br/>
-              </span>
-    },
-    {
-      title: 'Education',
-      answer: 'Kasetsart University'
-    }
-  ]
-}
+export const information = [
+  {
+    title: 'Firstname',
+    answer: 'Kongpon'
+  },
+  {
+    title: 'Lastname',
+    answer: 'Charanwattanakit'
+  },
+  {
+    title: 'Nickname',
+    answer: 'Jacky'
+  },
+  {
+    title: 'Birthname',
+    answer: 'กองภณ จรัญวัฒนากิจ'
+  },
+  {
+    title: 'Nationality',
+    answer: 'Thai'
+  },
+  {
+    title: 'Date of birth',
+    answer: '29 Jan 1998'
+  },
+  {
+    title: 'Language',
+    answer: (
+      <span>
+        Thai (Native)<br/>
+        English (Advance)<br/>
+        German (Elementary)<br/>
+      </span>
+    )
+  },
+  {
+    title: 'Education',
+    answer: 'Kasetsart University'
+  }
+]
 
 export const skills = {
   icon: 'tasks',
