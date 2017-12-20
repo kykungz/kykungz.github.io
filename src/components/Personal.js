@@ -2,9 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import { information } from '../assets/data'
 
-const Line = styled.div`
-  clear: both;
-`
+const cutoff = information.length / 2 + 1
 
 const Info = styled.span`
   font-size: 20px;
@@ -19,25 +17,24 @@ const Right = Info.extend`
   text-align: right;
 `
 
-const cutoff = (length) => length / 2 + 1
+const Line = ({ line }) => (
+  <div className="clearfix">
+    <Left>{ line.title }:</Left>
+    <Right lang={ line.lang }>{ line.answer }</Right>
+  </div>
+)
 
 const Personal = () => (
   <div className="container-fluid">
     <div className="row">
       <div className="col-md">
-        { information.slice(0, cutoff(information.length)).map((line, i) =>
-          <Line key={i}>
-            <Left>{ line.title }:</Left>
-            <Right lang={ line.lang }>{ line.answer }</Right>
-          </Line>
+        { information.slice(0, cutoff).map((line, i) =>
+          <Line key={i} line={line} />
         ) }
       </div>
       <div className="col-md">
-        { information.slice(cutoff(information.length)).map((line, i) =>
-            <Line key={i}>
-              <Left>{ line.title }:</Left>
-              <Right>{ line.answer }</Right>
-            </Line>
+        { information.slice(cutoff).map((line, i) =>
+          <Line key={i} line={line} />
         ) }
       </div>
     </div>
