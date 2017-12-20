@@ -14,6 +14,7 @@ const Title = styled.div`
 
 const Name = styled.h1`
   font-size: 4em;
+  font-weight: bold;
 
   @media (max-width: 575px) {
     font-size: 3em;
@@ -23,7 +24,7 @@ const Name = styled.h1`
 const Header = () => (
   <Jumbotron className="jumbotron jumbotron-fluid">
     <Title className="container">
-      <Name><b>Kongpon C.</b></Name>
+      <Name>Kongpon C.</Name>
       <h4>Software Developer</h4>
     </Title>
   </Jumbotron>
