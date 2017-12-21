@@ -15,7 +15,7 @@ const Achievement = () => withSeparator(
           { event.description }
         </Description>
       </div>
-      <div className="p-0 text-center">
+      <div className="image-container p-0">
         { event.images }
       </div>
     </React.Fragment>

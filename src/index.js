@@ -22,6 +22,11 @@ injectGlobal`
     max-width: 900px;
   }
 
+  .image-container {
+    max-width: 600px;
+    margin: auto;
+  }
+
   .flex-center {
     display: flex;
     justify-content: center;

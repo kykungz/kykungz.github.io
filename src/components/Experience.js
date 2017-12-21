@@ -24,8 +24,7 @@ const Experience = () => (
         </ImageList>
         <div className="col-sm-8">
           <h4 className="text-center text-sm-left">
-            <b className="d-block d-md-inline-block">{ exp.position }</b>
-            <span className="d-none d-md-inline">&nbsp;</span>
+            <b className="d-block d-md-inline-block mr-2">{ exp.position }</b>
             <span className="badge badge-dark">@{ exp.company }</span>
           </h4>
           <ul className="mb-0">

@@ -7,6 +7,7 @@ import Personal from './components/Personal';
 import Skill from './components/Skill';
 import Experience from './components/Experience';
 import Achievement from './components/Achievement';
+import Project from './components/Project';
 
 import sectionWrapper from './hocs/sectionWrapper';
 
@@ -14,6 +15,7 @@ const PersonalSection = sectionWrapper(Personal)
 const SkillSection = sectionWrapper(Skill)
 const ExperienceSection = sectionWrapper(Experience)
 const AchievementSection = sectionWrapper(Achievement)
+const ProjectSection = sectionWrapper(Project)
 
 class App extends Component {
   render() {
@@ -26,6 +28,7 @@ class App extends Component {
         <SkillSection title="Skills" icon="tasks" />
         <ExperienceSection title="Working Experiences" icon="briefcase" />
         <AchievementSection title="Achievements" icon="star"/>
+        <ProjectSection title="Projects" icon="th"/>
       </div>
     );
   }

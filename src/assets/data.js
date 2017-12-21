@@ -19,6 +19,9 @@ const lhdImages = getImages('localhackday', 'jpg', 6)
 const newsImages = getImages('news', 'jpg', 2)
 const exdImages = getImages('exceed', 'jpg', 2)
 
+const rememberMeImages = getImages('projects/rememberMe', 'png', 1)
+const allabouteggsImages = getImages('projects/allabouteggs', 'png', 1)
+
 export const profile = {
   name: 'Kongpon Charanwattanakit',
   position: 'Software Developer',
