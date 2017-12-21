@@ -20,7 +20,7 @@ const ProjectInfo = ({ project }) => (
     <div className="mb-2">
       { project.images.map((image, i) =>
         <div key={i} className="image-container">
-          <img  className="img-fluid" src={ image } alt={ image }/>
+          <img className="img-fluid" src={ image } alt={ image }/>
         </div>
       ) }
     </div>
