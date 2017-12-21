@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components'
-import { information } from '../assets/data'
+import information from '../data/information'
 
 const cutoff = information.length / 2 + 1
 
@@ -41,4 +41,4 @@ const Personal = () => (
   </div>
 )
 
-export default Personal;
+export default Personal

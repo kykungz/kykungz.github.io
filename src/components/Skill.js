@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { skills } from '../assets/data'
+import React from 'react'
+import styled from 'styled-components'
+import skills from '../data/skills'
 
 const Framework = styled.div`
   font-size: 18px;
@@ -39,4 +39,4 @@ const Skill = () => (
   </div>
 )
 
-export default Skill;
+export default Skill

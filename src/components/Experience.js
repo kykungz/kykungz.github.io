@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { experiences } from '../assets/data'
+import React from 'react'
+import styled from 'styled-components'
+import experiences from '../data/experiences'
 import withSeparator from '../hocs/withSeparator'
 
 const ImageList = styled.div`
@@ -38,4 +38,4 @@ const Experience = () => (
   </div>
 )
 
-export default Experience;
+export default Experience

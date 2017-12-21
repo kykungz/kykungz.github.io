@@ -1,7 +1,7 @@
-import React from 'react';
-import Title from '../containers/Title';
-import projects from '../data/projects';
-import withSeparator from '../hocs/withSeparator';
+import React from 'react'
+import Title from '../containers/Title'
+import projects from '../data/projects'
+import withSeparator from '../hocs/withSeparator'
 import ProjectInfo from './ProjectInfo'
 
 const Project = () => (
@@ -17,4 +17,4 @@ const Project = () => (
   </div>
 )
 
-export default Project;
+export default Project

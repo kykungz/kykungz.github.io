@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import Title from '../containers/Title'
 import Description from '../containers/Description'
-import { achievements } from '../assets/data'
+import achievements from '../data/achievements'
 import withSeparator from '../hocs/withSeparator'
 
 const Achievement = () => withSeparator(
@@ -22,4 +22,4 @@ const Achievement = () => withSeparator(
   )
 )
 
-export default Achievement;
+export default Achievement

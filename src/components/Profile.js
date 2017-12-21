@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { profile } from '../assets/data';
-import BaseDescription from '../containers/Description';
-import portrait from '../assets/images/portrait.png';
+import React from 'react'
+import styled from 'styled-components'
+import profile from '../data/profile'
+import BaseDescription from '../containers/Description'
+import portrait from '../assets/images/portrait.png'
 
 const Layout = styled.div`
   display: flex;
@@ -35,4 +35,4 @@ const Profile = () => (
   </Layout>
 )
 
-export default Profile;
+export default Profile

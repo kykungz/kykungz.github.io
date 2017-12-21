@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Description = styled.p`
   padding: 8px 15px;
@@ -17,4 +17,4 @@ const Description = styled.p`
   }
 `
 
-export default Description;
+export default Description
