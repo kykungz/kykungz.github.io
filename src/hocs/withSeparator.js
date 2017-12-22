@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const withSeparator = (Components) => (
-  <React.Fragment>
+  <Fragment>
     { Components.reduce((prev, curr) =>
-      <React.Fragment>{prev} <hr/> {curr}</React.Fragment>
+      <Fragment>{prev} <hr/> {curr}</Fragment>
     ) }
-  </React.Fragment>
+  </Fragment>
 )
 
 export default withSeparator;

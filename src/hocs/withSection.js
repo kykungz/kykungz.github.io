@@ -6,7 +6,7 @@ const Section = styled.div`
   margin-bottom: 40px;
 `
 
-const sectionWrapper = (Component) => ({ icon, title, wide }) => (
+const withSection = (Component) => ({ icon, title, wide }) => (
   <Section>
     <div className="container content-container">
       <h2>
@@ -22,4 +22,4 @@ const sectionWrapper = (Component) => ({ icon, title, wide }) => (
   </Section>
 )
 
-export default sectionWrapper;
+export default withSection;
