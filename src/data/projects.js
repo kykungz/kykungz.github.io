@@ -13,6 +13,7 @@ const whackamoleImages = getImages('projects/whackamole', 'gif', 2)
 const remecImages = getImages('projects/remec', 'png', 3)
 const takecarecupImages = getImages('projects/takecarecup', 'png', 3)
 const bcbk8Images = getImages('projects/bcbk8', 'png', 2)
+const whatwordImages = getImages('projects/whatword', 'png', 2)
 
 const projects = [
   {
@@ -210,6 +211,23 @@ const projects = [
             {' '}
             <a rel="noopener noreferrer" target="_blank"
               href="http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_14_Group_8">wiki</a>.
+          </Fragment>
+      },
+      {
+        name: 'What word is it?',
+        tags: [ Tags.js, Tags.vue ],
+        year: <Fragment> 2<sup>nd</sup> Year </Fragment>,
+        images: whatwordImages,
+        description:
+          <Fragment>
+            A fun/ice-breaking group activity which you can create your own game
+            and play. Users can generate a game by listing all the words into
+            the word bank. The gamemaster will control the game through remote,
+            and the game can be displayed on the screen. One person will be guessing
+            the word without seeing the answer, while others will see the answer
+            but cannot say the word.{' '}
+            <a rel="noopener noreferrer" target="_blank"
+              href="http://kykungz.github.io/whatword">Play now</a>.
           </Fragment>
       },
       {
