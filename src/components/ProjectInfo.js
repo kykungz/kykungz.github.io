@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Description from '../containers/Description'
+import Description from './Description'
 
 const TagContainer = styled.span`
   font-size: 20px;

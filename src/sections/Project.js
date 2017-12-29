@@ -1,8 +1,8 @@
 import React from 'react'
-import Title from '../containers/Title'
 import projects from '../data/projects'
 import withSeparator from '../hocs/withSeparator'
-import ProjectInfo from './ProjectInfo'
+import Title from '../components/Title'
+import ProjectInfo from '../components/ProjectInfo'
 
 const Project = () => (
   <div className="container-fluid" >

@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from '../containers/Title'
-import Description from '../containers/Description'
+import Title from '../components/Title'
+import Description from '../components/Description'
 import achievements from '../data/achievements'
 import withSeparator from '../hocs/withSeparator'
 
