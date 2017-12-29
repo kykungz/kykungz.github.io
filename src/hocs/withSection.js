@@ -3,7 +3,7 @@ import FontAwesome from 'react-fontawesome';
 import styled from 'styled-components';
 
 const Section = styled.div`
-  margin-bottom: 40px;
+  margin-top: 40px;
 `
 
 const withSection = (Component) => ({ icon, title, wide }) => (

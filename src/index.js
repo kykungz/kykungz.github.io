@@ -32,6 +32,10 @@ injectGlobal`
     justify-content: center;
     align-items: center;
   }
+
+  .active {
+    background-color: hsl(0, 0%, 91%) !important;
+  }
 `;
 
 ReactDOM.render(<App />, document.getElementById('root'));

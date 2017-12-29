@@ -11,7 +11,11 @@ const Link = styled.a`
   background-color: whitesmoke;
   border-radius: 20px;
   padding: 4px 0;
-  transition: color 200ms;
+  transition: all 200ms;
+
+  &:hover {
+    transform: scale(0.95);
+  }
 `
 
 const Grid = styled.div`
@@ -29,7 +33,7 @@ const Grid = styled.div`
 const Contact = () => (
   <Grid>
     { contacts.map((contact, i) =>
-      <Link href={ contact.link }>
+      <Link key={i} href={ contact.link }>
         <FontAwesome className="mr-2" name={ contact.icon } />
         { contact.name }
       </Link>
