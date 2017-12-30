@@ -1,7 +1,7 @@
 const contact = [
   {
     name: 'Email',
-    link: 'mailto:jackykongpon@gmail.com',
+    link: 'mailto:jackykongpon@gmail.com?Subject=Hey, I found you on GitHub!',
     icon: 'envelope',
     tooltip: 'jackykongpon@gmail.com'
   },
