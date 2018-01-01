@@ -1,15 +1,15 @@
 {
-  "main.css": "static/css/main.34908ec2.css",
-  "main.css.map": "static/css/main.34908ec2.css.map",
-  "main.js": "static/js/main.e66d389d.js",
-  "main.js.map": "static/js/main.e66d389d.js.map",
+  "main.css": "static/css/main.fafc3270.css",
+  "main.css.map": "static/css/main.fafc3270.css.map",
+  "main.js": "static/js/main.342bebd1.js",
+  "main.js.map": "static/js/main.342bebd1.js.map",
   "static/media/1.jpg": "static/media/1.bf0e7819.jpg",
-  "static/media/1.png": "static/media/1.a35e7a7f.png",
-  "static/media/2.gif": "static/media/2.3db4ee90.gif",
+  "static/media/1.png": "static/media/1.fe7fc0d0.png",
+  "static/media/2.gif": "static/media/2.bdc154c0.gif",
   "static/media/2.jpg": "static/media/2.fddd5673.jpg",
-  "static/media/2.png": "static/media/2.1edac9ca.png",
+  "static/media/2.png": "static/media/2.39d25886.png",
   "static/media/3.jpg": "static/media/3.9a36d363.jpg",
-  "static/media/3.png": "static/media/3.3ad70973.png",
+  "static/media/3.png": "static/media/3.ccb3aeaf.png",
   "static/media/4.jpg": "static/media/4.f0adaa1f.jpg",
   "static/media/5.jpg": "static/media/5.086c0078.jpg",
   "static/media/6.jpg": "static/media/6.fe518610.jpg",
@@ -41,5 +41,7 @@
   "static/media/takecare-hardware.png": "static/media/takecare-hardware.26c0f4c2.png",
   "static/media/takecare-mobile-1.png": "static/media/takecare-mobile-1.98552fa5.png",
   "static/media/takecare-mobile-2.png": "static/media/takecare-mobile-2.5c1ec40e.png",
-  "static/media/whack.gif": "static/media/whack.b2711aff.gif"
+  "static/media/trirong-thai-400.woff2": "static/media/trirong-thai-400.f3922f6e.woff2",
+  "static/media/whack.gif": "static/media/whack.b2711aff.gif",
+  "static/media/work-sans-latin-400.woff2": "static/media/work-sans-latin-400.011f6e38.woff2"
 }
