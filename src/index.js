@@ -3,19 +3,16 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+import './fontfaces.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'devicon-2.2/devicon.min.css';
 
-import { injectGlobal } from 'styled-components';
+import {injectGlobal} from 'styled-components';
 
-injectGlobal`
+injectGlobal `
   * {
-    font-family: 'Work Sans', sans-serif;
-  }
-
-  *:lang(th) {
-    font-family: 'Trirong', serif;
+    font-family: 'Work Sans', 'Trirong', sans-serif;
   }
 
   .content-container {
@@ -38,5 +35,5 @@ injectGlobal`
   }
 `;
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 registerServiceWorker();

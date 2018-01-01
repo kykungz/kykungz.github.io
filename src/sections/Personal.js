@@ -20,7 +20,7 @@ const Right = Info.extend`
 const Line = ({ line }) => (
   <div className="clearfix">
     <Left>{ line.title }:</Left>
-    <Right lang={ line.lang }>{ line.answer }</Right>
+    <Right>{ line.answer }</Right>
   </div>
 )
 

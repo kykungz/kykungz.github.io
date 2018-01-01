@@ -1,0 +1,20 @@
+/* thai */
+@font-face {
+  font-family: 'Trirong';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Trirong-Regular'),
+    url('./assets/fonts/trirong-thai-400.woff2') format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Work Sans'),
+    local('WorkSans-Regular'),
+    url('./assets/fonts/work-sans-latin-400.woff2') format('woff2');
+}

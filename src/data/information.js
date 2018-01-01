@@ -15,16 +15,11 @@ const information = [
   },
   {
     title: 'Birthname',
-    answer: 'กองภณ จรัญวัฒนากิจ',
-    lang: 'th'
+    answer: 'กองภณ จรัญวัฒนากิจ'
   },
   {
     title: 'Nationality',
-    answer: (
-      <Fragment>
-        Thai <span role="img" aria-label="th">🇹🇭</span>
-      </Fragment>
-    )
+    answer: 'Thai 🇹🇭'
   },
   {
     title: 'Date of birth',
@@ -32,13 +27,12 @@ const information = [
   },
   {
     title: 'Language',
-    answer: (
+    answer:
       <Fragment>
-        Thai (Native) <span role="img" aria-label="th">🇹🇭</span><br/>
-        English (Advance) <span role="img" aria-label="en">🇺🇸</span><br/>
-        German (Elementary) <span role="img" aria-label="de">🇩🇪</span><br/>
+        {'Thai (Native) 🇹🇭'} <br/>
+        {'English (Advance) 🇺🇸'} <br/>
+        {'German (Elementary) 🇩🇪'} <br/>
       </Fragment>
-    )
   },
   {
     title: 'Education',
