@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { animateScroll as scrollSpy } from 'react-scroll'
+import ReactGA from 'react-ga'
 
 // Higher-order Components
 import withSection from './hocs/withSection'
@@ -51,7 +52,10 @@ const ContactMe = withScrollSpy('contact')(
 )
 
 class App extends PureComponent {
+
   componentDidMount() {
+    ReactGA.initialize('UA-104879759-1')
+    ReactGA.pageview(window.location.pathname + window.location.search)
     document.getElementById('App').addEventListener('scroll', scrollSpy.update)
   }
 
