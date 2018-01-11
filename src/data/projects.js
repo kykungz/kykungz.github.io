@@ -215,7 +215,7 @@ const projects = [
       },
       {
         name: 'What word is it?',
-        tags: [ Tags.js, Tags.vue ],
+        tags: [ Tags.js, Tags.node, Tags.vue ],
         year: <Fragment> 2<sup>nd</sup> Year </Fragment>,
         images: whatwordImages,
         description:

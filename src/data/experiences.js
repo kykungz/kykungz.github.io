@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import bcbk8Img from '../assets/images/bcbk8.png'
 import sellsukiImg from '../assets/images/sellsuki.png'
+// import ywc15Img from '../assets/images/ywc15.jpg'
+import tedImg from '../assets/images/ted.jpg'
 
 const experiences = [
   {
@@ -11,12 +13,12 @@ const experiences = [
     image: sellsukiImg,
     info: [
       (
-        <React.Fragment>
+        <Fragment>
           <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/akita.wh/">
             Akita Warehouse
           </a>
           &nbsp;WMS (Warehouse Management System)
-        </React.Fragment>
+        </Fragment>
       ),
       'Fullstack',
       'Vue.js, Vuex, Jest, Node, MySQL',
@@ -38,7 +40,28 @@ const experiences = [
       'React, Sass/SCSS',
       'November, 2017'
     ]
+  },
+  {
+    position: 'Web Developer',
+    company: 'TEDxKasetsartU',
+    alt: 'TEDx',
+    image: tedImg,
+    info: [
+      'React, Next.js',
+      'January, 2018'
+    ]
   }
+  // {
+  //   position: 'Web Programmer',
+  //   company: <Fragment>Young Webmaster Camp 15<sup>th</sup></Fragment>,
+  //   alt: 'BCBK8',
+  //   image: ywc15Img,
+  //   info: [
+  //     'Vue.js',
+  //     'Firebase Realtime Database',
+  //     'January, 2018'
+  //   ]
+  // }
 ]
 
 export default experiences
