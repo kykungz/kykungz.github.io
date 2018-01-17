@@ -30,7 +30,7 @@ const ProjectInfo = ({ project }) => (
       project.collaborator &&
       <h6>
         (Collaborator:&nbsp;
-          <a target="_blank" href={project.collaborator.site}>
+          <a rel="noopener noreferrer" target="_blank" href={project.collaborator.site}>
             {project.collaborator.name}
           </a>
         )
