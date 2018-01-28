@@ -4,7 +4,8 @@ import backgroundImg from '../assets/images/header-blur.png'
 
 const Jumbotron = styled.div`
   background-image: url(${backgroundImg});
-  background-size: 100% 100%;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
 `
 
 const Title = styled.div`
