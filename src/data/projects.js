@@ -2,18 +2,18 @@ import React, { Fragment } from 'react'
 import Tags from '../utils/tags'
 import { getImages } from '../utils/functions'
 
-const rememberMeImages = getImages('projects/rememberMe', 'png', 1)
-const allabouteggsImages = getImages('projects/allabouteggs', 'png', 1)
-const reversiImages = getImages('projects/reversi', 'gif', 2)
-const chatImages = getImages('projects/chat', 'png', 1)
-const pongImages = getImages('projects/pong', 'gif', 2)
-const spacefighterImages = getImages('projects/spacefighter', 'gif', 2)
-const saveturtleImages = getImages('projects/saveturtle', 'png', 1)
-const whackamoleImages = getImages('projects/whackamole', 'gif', 2)
-const remecImages = getImages('projects/remec', 'png', 3)
-const takecarecupImages = getImages('projects/takecarecup', 'png', 3)
-const bcbk8Images = getImages('projects/bcbk8', 'png', 2)
-const whatwordImages = getImages('projects/whatword', 'png', 2)
+const rememberMeImages = getImages('projects/rememberMe', 1)
+const allabouteggsImages = getImages('projects/allabouteggs', 1)
+const reversiImages = getImages('projects/reversi', 2)
+const chatImages = getImages('projects/chat', 1)
+const pongImages = getImages('projects/pong', 2)
+const spacefighterImages = getImages('projects/spacefighter', 2)
+const saveturtleImages = getImages('projects/saveturtle', 1)
+const whackamoleImages = getImages('projects/whackamole', 2)
+const remecImages = getImages('projects/remec', 3)
+const takecarecupImages = getImages('projects/takecarecup', 3)
+const bcbk8Images = getImages('projects/bcbk8', 2)
+const whatwordImages = getImages('projects/whatword', 2)
 
 const projects = [
   {
