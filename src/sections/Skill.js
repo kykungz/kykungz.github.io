@@ -16,7 +16,7 @@ const Progress = styled.div`
 const Skill = () => (
   <div className="container content-container">
     { skills.map((skill, i) =>
-      <Line key={i} className="row align-items-center">
+      <Line key={i} className="row no-gutters align-items-center">
         <div className="col-sm-4">
           <h3 className="mb-0">
             <i className={skill.icon}></i>
