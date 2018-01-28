@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import { getImages } from '../utils/functions'
 
-const lhdImages = getImages('localhackday', 'jpg', 6)
-const newsImages = getImages('news', 'jpg', 2)
-const exdImages = getImages('exceed', 'jpg', 2)
-const ywc15Images = getImages('ywc15', 'jpg', 2)
-const ywc15NewsImages = getImages('ywc15-news', 'jpg', 2)
+const lhdImages = getImages('localhackday', 6)
+const newsImages = getImages('news', 2)
+const exdImages = getImages('exceed', 2)
+const ywc15Images = getImages('ywc15', 2)
+const ywc15NewsImages = getImages('ywc15-news', 2)
 
 const achievements = [
   {
@@ -75,12 +75,20 @@ const achievements = [
   {
     icon: 'newspaper-o',
     variant: 'danger',
-    title: 'Interviewed with VCHARKARN.com',
+    title: 'Representative of YWC Web Programmer',
     description: (
       <Fragment>
-        Representative of Web Programmer.{' '}
         <a rel="noopener noreferrer" target="_blank" href="http://www.vcharkarn.com/vnews/506127">
-          Read Article <i className="fa fa-external-link"></i>
+          vchakarn.com <i className="fa fa-external-link mr-3"></i>
+        </a>
+        <a rel="noopener noreferrer" target="_blank" href="https://mgronline.com/management/detail/9610000005827">
+          Manager Online <i className="fa fa-external-link mr-3"></i>
+        </a>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.brandbuffet.in.th/2018/01/young-webmaster-camp-15th/">
+          Brand Buffet <i className="fa fa-external-link mr-3"></i>
+        </a>
+        <a rel="noopener noreferrer" target="_blank" href="http://www.ryt9.com/s/tpd/2770173">
+          Thai Post <i className="fa fa-external-link mr-3"></i>
         </a>
       </Fragment>
     ),
