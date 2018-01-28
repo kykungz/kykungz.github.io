@@ -6,14 +6,17 @@ import styled from 'styled-components'
 
 const Link = styled.a`
   display: block;
-  text-decoration: none !important;
   font-size: 1.4em;
-  background-color: whitesmoke;
+  background: ${props => props.bg};
+  color: ${props => props.color};
   border-radius: 20px;
   padding: 4px 0;
   transition: all 200ms;
 
   &:hover {
+    text-decoration: none;
+    color: ${props => props.color};
+    filter: brightness(0.9);
     transform: scale(0.95);
   }
 `
@@ -33,9 +36,9 @@ const Grid = styled.div`
 const Contact = () => (
   <Grid>
     { contacts.map((contact, i) =>
-      <Link key={i} href={ contact.link }>
-        <FontAwesome className="mr-2" name={ contact.icon } />
-        { contact.name }
+      <Link key={i} {...contact}>
+        <FontAwesome size={contact.size} className="mr-2" name={contact.icon} />
+        {contact.name}
       </Link>
     ) }
   </Grid>
