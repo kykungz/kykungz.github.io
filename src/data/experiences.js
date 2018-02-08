@@ -3,6 +3,7 @@ import React, { Fragment } from 'react'
 import bcbk8Img from '../assets/images/bcbk8.png'
 import sellsukiImg from '../assets/images/sellsuki.png'
 // import ywc15Img from '../assets/images/ywc15.jpg'
+import kuImg from '../assets/images/ku.jpg'
 import tedImg from '../assets/images/ted.jpg'
 
 const experiences = [
@@ -39,6 +40,18 @@ const experiences = [
       'Frontend',
       'React, Sass/SCSS',
       'November, 2017'
+    ]
+  },
+  {
+    position: 'Teaching Assistant',
+    company: 'Kasetsart University',
+    alt: 'ku',
+    image: kuImg,
+    info: [
+      'Object-Oriented Programming II',
+      'Design Pattern',
+      'Java',
+      'January, 2018'
     ]
   },
   {
