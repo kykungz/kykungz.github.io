@@ -34,8 +34,6 @@ injectGlobal `
     background-color: hsl(0, 0%, 91%) !important;
   }
 
-  :root {}
-
   /* Mobile */
   @media screen and (max-width: 480px) {}
 
