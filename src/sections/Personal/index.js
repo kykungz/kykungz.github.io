@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import information from '../data/information'
+import information from './model'
 
 const cutoff = information.length / 2 + 1
 

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import Tags from '../utils/tags'
-import { getImages } from '../utils/functions'
+import Tags from '../../utils/tags'
+import { getImages } from '../../utils/functions'
 
 const rememberMeImages = getImages('projects/rememberMe', 1)
 const allabouteggsImages = getImages('projects/allabouteggs', 1)

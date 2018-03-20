@@ -1,8 +1,8 @@
 import React from 'react'
-import withName from '../hocs/withName'
-import contacts from '../data/contacts'
 import FontAwesome from 'react-fontawesome'
 import styled from 'styled-components'
+import withName from '../../hocs/withName'
+import contacts from './model'
 
 const Link = styled.a`
   display: block;

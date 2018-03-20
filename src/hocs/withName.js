@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import profile from '../data/profile'
+import profile from '../sections/Profile/model'
 import portrait from '../assets/images/portrait.png'
 
 const Layout = styled.div`

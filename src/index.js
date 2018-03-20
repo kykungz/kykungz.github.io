@@ -1,15 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
-// import { unregister } from './registerServiceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
 
-// import './fontfaces.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'font-awesome/css/font-awesome.min.css';
-import 'devicon-2.2/devicon.min.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'font-awesome/css/font-awesome.min.css'
+import 'devicon-2.2/devicon.min.css'
 
-import { injectGlobal } from 'styled-components';
+import { injectGlobal } from 'styled-components'
 
 injectGlobal `
   @import url('https://fonts.googleapis.com/css?family=Trirong|Work+Sans');
@@ -36,8 +33,17 @@ injectGlobal `
   .active {
     background-color: hsl(0, 0%, 91%) !important;
   }
-`;
 
-ReactDOM.render(<App/>, document.getElementById('root'));
-// registerServiceWorker();
-// unregister();
+  :root {}
+
+  /* Mobile */
+  @media screen and (max-width: 480px) {}
+
+  /* Tablet */
+  @media screen and (max-width: 768px) {}
+
+  /* Desktop */
+  @media screen and (max-width: 1024px) {}
+`
+
+ReactDOM.render(<App/>, document.getElementById('root'))

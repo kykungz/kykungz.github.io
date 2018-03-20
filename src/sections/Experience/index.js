@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import experiences from '../data/experiences'
-import withSeparator from '../hocs/withSeparator'
+import withSeparator from '../../hocs/withSeparator'
+import experiences from './model'
 
 const ImageList = styled.div`
   display: flex;

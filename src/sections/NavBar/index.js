@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import FontAwesome from 'react-fontawesome'
 import styled from 'styled-components'
-import Hamburger from '../components/Hamburger'
+import Hamburger from '../../components/Hamburger'
 
 const Nav = styled.nav`
   background-color: white;

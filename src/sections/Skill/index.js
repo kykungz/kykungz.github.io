@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import skills from '../data/skills'
+import skills from './model'
 
 const Framework = styled.div`
   font-size: 18px;

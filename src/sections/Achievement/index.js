@@ -1,8 +1,8 @@
 import React from 'react'
-import Title from '../components/Title'
-import Description from '../components/Description'
-import achievements from '../data/achievements'
-import withSeparator from '../hocs/withSeparator'
+import Title from '../../components/Title'
+import Description from '../../components/Description'
+import withSeparator from '../../hocs/withSeparator'
+import achievements from './model'
 
 const Achievement = () => withSeparator(
   achievements.map((event, i) =>

@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
 
-import bcbk8Img from '../assets/images/bcbk8.png'
-import sellsukiImg from '../assets/images/sellsuki.png'
-// import ywc15Img from '../assets/images/ywc15.jpg'
-import kuImg from '../assets/images/ku.jpg'
-import tedImg from '../assets/images/ted.jpg'
+import bcbk8Img from '../../assets/images/bcbk8.png'
+import sellsukiImg from '../../assets/images/sellsuki.png'
+// import ywc15Img from '../../assets/images/ywc15.jpg'
+import kuImg from '../../assets/images/ku.jpg'
+import tedImg from '../../assets/images/ted.jpg'
 
 const experiences = [
   {

@@ -10,7 +10,7 @@ import withScrollSpy from './hocs/withScrollSpy'
 import NavBar from './sections/NavBar'
 import Header from './sections/Header'
 import Profile from './sections/Profile'
-import Credit from './sections/Credit'
+import Footer from './sections/Footer'
 
 // Wrapped Components
 import Personal from './sections/Personal'
@@ -68,7 +68,7 @@ class App extends PureComponent {
         <Achievements />
         <Projects />
         <ContactMe />
-        <Credit />
+        <Footer />
       </div>
     )
   }

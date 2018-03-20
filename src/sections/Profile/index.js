@@ -1,7 +1,7 @@
 import React from 'react'
-import profile from '../data/profile'
-import withName from '../hocs/withName'
-import Description from '../components/Description'
+import withName from '../../hocs/withName'
+import Description from '../../components/Description'
+import profile from './model'
 
 const Info = Description.extend`
   padding: 15px;

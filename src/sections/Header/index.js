@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import backgroundImg from '../assets/images/header-blur.png'
+import backgroundImg from '../../assets/images/header-blur.png'
 
 const Jumbotron = styled.div`
   background-image: url(${backgroundImg});

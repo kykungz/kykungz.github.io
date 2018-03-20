@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { getImages } from '../utils/functions'
+import { getImages } from '../../utils/functions'
 
 const lhdImages = getImages('localhackday', 6)
 const newsImages = getImages('news', 2)
