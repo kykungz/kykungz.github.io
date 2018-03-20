@@ -6,6 +6,7 @@ const newsImages = getImages('news', 2)
 const exdImages = getImages('exceed', 2)
 const ywc15Images = getImages('ywc15', 2)
 const ywc15NewsImages = getImages('ywc15-news', 2)
+const tescoLotusImages = getImages('tescolotus', 2)
 
 const achievements = [
   {
@@ -93,6 +94,15 @@ const achievements = [
       </Fragment>
     ),
     images: ywc15NewsImages.map((image, i) =>
+      <img key={i} className="img-fluid" src={ image } alt={ image }/>
+    )
+  },
+  {
+    icon: 'certificate',
+    variant: 'danger',
+    title: <Fragment>1<sup>st</sup> Runner Up Tesco Lotus Hackathon 2018</Fragment>,
+    description: 'Tesco Lotus Hackathon: Revolutionising Retail Towards Thailand 4.0',
+    images: tescoLotusImages.map((image, i) =>
       <img key={i} className="img-fluid" src={ image } alt={ image }/>
     )
   }
