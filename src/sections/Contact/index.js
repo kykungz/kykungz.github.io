@@ -37,7 +37,7 @@ const Contact = () => (
   <Grid>
     { contacts.map((contact, i) =>
       <Link key={i} {...contact}>
-        <FontAwesome size={contact.size} className="mr-2" name={contact.icon} />
+        <FontAwesome size={contact.size} className='mr-2' name={contact.icon} />
         {contact.name}
       </Link>
     ) }

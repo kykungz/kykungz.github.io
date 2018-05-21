@@ -18,11 +18,11 @@ const Portrait = styled.img`
 `
 
 const withName = (Component) => () => (
-  <Layout className="container content-container flex-md-nowrap">
-    <Portrait src={ portrait } alt="portrait" />
+  <Layout className='container content-container flex-md-nowrap'>
+    <Portrait src={portrait} alt='portrait' />
     <div>
-      <h2 className="text-center"><b>{ profile.name }</b></h2>
-      <h4 className="text-center text-secondary">{ profile.position }</h4>
+      <h2 className='text-center'><b>{ profile.name }</b></h2>
+      <h4 className='text-center text-secondary'>{ profile.position }</h4>
       <Component />
     </div>
   </Layout>

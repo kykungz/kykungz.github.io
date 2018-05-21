@@ -15,7 +15,7 @@ const experiences = [
     info: [
       (
         <Fragment>
-          <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/akita.wh/">
+          <a rel='noopener noreferrer' target='_blank' href='https://www.facebook.com/akita.wh/'>
             Akita Warehouse
           </a>
           &nbsp;WMS (Warehouse Management System)
@@ -33,7 +33,7 @@ const experiences = [
     image: bcbk8Img,
     info: [
       (
-        <a rel="noopener noreferrer" target="_blank" href="http://2017.barcampbangkhen.org">
+        <a rel='noopener noreferrer' target='_blank' href='http://2017.barcampbangkhen.org'>
           Barcamp Bangkhen 8
         </a>
       ),

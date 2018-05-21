@@ -42,4 +42,5 @@ const skills = [
     level: '45'
   }
 ]
+
 export default skills

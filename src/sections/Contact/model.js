@@ -6,8 +6,8 @@ const contact = [
     tooltip: 'Resume',
     color: 'white',
     bg: 'orange',
-    rel: "noopener noreferrer",
-    target: "_blank"
+    rel: 'noopener noreferrer',
+    target: '_blank'
   },
   {
     name: 'Github',
@@ -17,8 +17,8 @@ const contact = [
     color: 'white',
     bg: '#333',
     size: 'lg',
-    rel: "noopener noreferrer",
-    target: "_blank"
+    rel: 'noopener noreferrer',
+    target: '_blank'
   },
   {
     name: 'Email',
@@ -35,8 +35,8 @@ const contact = [
     tooltip: 'Kongpon Charanwattanakit',
     color: 'white',
     bg: '#3b5998',
-    rel: "noopener noreferrer",
-    target: "_blank"
+    rel: 'noopener noreferrer',
+    target: '_blank'
   },
   {
     name: 'Skype',
@@ -46,8 +46,8 @@ const contact = [
     color: 'white',
     bg: '#00aff0',
     size: 'lg',
-    rel: "noopener noreferrer",
-    target: "_blank"
+    rel: 'noopener noreferrer',
+    target: '_blank'
   },
   {
     name: 'Instagram',
@@ -57,8 +57,8 @@ const contact = [
     color: 'white',
     bg: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)',
     size: 'lg',
-    rel: "noopener noreferrer",
-    target: "_blank"
+    rel: 'noopener noreferrer',
+    target: '_blank'
   }
 ]
 

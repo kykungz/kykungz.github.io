@@ -19,15 +19,15 @@ const NavItem = styled.span.attrs({
 `
 
 const NavbarBrand = styled.a.attrs({
-  className: "navbar-brand"
+  className: 'navbar-brand'
 })`
   margin: 6px 16px;
 `
 
 const ScrollLink = styled(Link).attrs({
-  activeClass: "active",
+  activeClass: 'active',
   spy: true,
-  smooth: "easeInOutQuint",
+  smooth: 'easeInOutQuint',
   duration: 800
 })`
   cursor: pointer;
@@ -40,33 +40,33 @@ const ScrollLink = styled(Link).attrs({
 `
 
 const NavBar = () => (
-  <Nav className="navbar navbar-light navbar-expand-lg sticky-top">
-    <div className="container-fluid mx-lg-4">
-      <NavbarBrand href="/">
-        <FontAwesome name="code" size="lg" />
-        <b className="mx-2">
+  <Nav className='navbar navbar-light navbar-expand-lg sticky-top'>
+    <div className='container-fluid mx-lg-4'>
+      <NavbarBrand href='/'>
+        <FontAwesome name='code' size='lg' />
+        <b className='mx-2'>
           Kongpon
         </b>
-        <FontAwesome name="copyright" size="lg" style={{color: 'orange'}} />
+        <FontAwesome name='copyright' size='lg' style={{color: 'orange'}} />
       </NavbarBrand>
-      <div className="navbar-nav d-none d-lg-flex">
-        <ScrollLink to="home" offset={-100}>
-          <NavItem> <FontAwesome name="home" /> Home </NavItem>
+      <div className='navbar-nav d-none d-lg-flex'>
+        <ScrollLink to='home' offset={-100}>
+          <NavItem> <FontAwesome name='home' /> Home </NavItem>
         </ScrollLink>
-        <ScrollLink to="about" offset={-80}>
-          <NavItem> <FontAwesome name="user-circle-o" /> About </NavItem>
+        <ScrollLink to='about' offset={-80}>
+          <NavItem> <FontAwesome name='user-circle-o' /> About </NavItem>
         </ScrollLink>
-        <ScrollLink to="achievements" offset={-90}>
-          <NavItem> <FontAwesome name="star" /> Achievements </NavItem>
+        <ScrollLink to='achievements' offset={-90}>
+          <NavItem> <FontAwesome name='star' /> Achievements </NavItem>
         </ScrollLink>
-        <ScrollLink to="projects" offset={-90}>
-          <NavItem> <FontAwesome name="th" /> Projects </NavItem>
+        <ScrollLink to='projects' offset={-90}>
+          <NavItem> <FontAwesome name='th' /> Projects </NavItem>
         </ScrollLink>
-        <ScrollLink to="contact" offset={-400}>
-          <NavItem> <FontAwesome name="send" /> Contact </NavItem>
+        <ScrollLink to='contact' offset={-400}>
+          <NavItem> <FontAwesome name='send' /> Contact </NavItem>
         </ScrollLink>
       </div>
-      <div className="mr-4 mt-1 d-flex d-lg-none">
+      <div className='mr-4 mt-1 d-flex d-lg-none'>
         <Hamburger />
       </div>
     </div>

@@ -29,39 +29,38 @@ const ProjectSection = withSection(Project)
 const ContactSection = withSection(Contact)
 
 const Home = withScrollSpy('home')(
-  <Header key="header" />
+  <Header key='header' />
 )
 
 const About = withScrollSpy('about')(
-  <Profile key="profile" />,
-  <PersonalSection key="personal" title="Personal Information" icon="user-circle-o" />,
-  <SkillSection key="skill" title="Skills" icon="tasks" />,
-  <ExperienceSection key="exp" title="Working Experiences" icon="briefcase" />,
+  <Profile key='profile' />,
+  <PersonalSection key='personal' title='Personal Information' icon='user-circle-o' />,
+  <SkillSection key='skill' title='Skills' icon='tasks' />,
+  <ExperienceSection key='exp' title='Working Experiences' icon='briefcase' />
 )
 
 const Achievements = withScrollSpy('achievements')(
-  <AchievementSection key="achievements" title="Achievements" icon="star" />
+  <AchievementSection key='achievements' title='Achievements' icon='star' />
 )
 
 const Projects = withScrollSpy('projects')(
-  <ProjectSection key="projects" title="Projects" icon="th" />
+  <ProjectSection key='projects' title='Projects' icon='th' />
 )
 
 const ContactMe = withScrollSpy('contact')(
-  <ContactSection key="contact" title="Contact" icon="send" />
+  <ContactSection key='contact' title='Contact' icon='send' />
 )
 
 class App extends PureComponent {
-
-  componentDidMount() {
+  componentDidMount () {
     ReactGA.initialize('UA-104879759-1')
     ReactGA.pageview(window.location.pathname + window.location.search)
     document.getElementById('App').addEventListener('scroll', scrollSpy.update)
   }
 
-  render() {
+  render () {
     return (
-      <div id="App">
+      <div id='App'>
         <NavBar />
         <Home />
         <About />

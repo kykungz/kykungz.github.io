@@ -23,8 +23,8 @@ const Name = styled.h1`
 `
 
 const Header = () => (
-  <Jumbotron className="jumbotron jumbotron-fluid">
-    <Title className="container">
+  <Jumbotron className='jumbotron jumbotron-fluid'>
+    <Title className='container'>
       <Name>Kongpon C.</Name>
       <h4>Software Developer</h4>
     </Title>

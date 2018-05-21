@@ -21,7 +21,7 @@ const projects = [
     list: [
       {
         name: 'Remember Me',
-        tags: [ Tags.python, Tags.tkinter],
+        tags: [ Tags.python, Tags.tkinter ],
         year: <Fragment> 11<sup>th</sup> Grade </Fragment>,
         images: rememberMeImages,
         description: `
@@ -121,7 +121,7 @@ const projects = [
         tags: [ Tags.java, Tags.swing ],
         year: <Fragment> 12<sup>th</sup> Grade </Fragment>,
         images: [],
-        description:
+        description: (
           <Fragment>
             {`
               Artificial Life (A-life), is a simulation that simulates behavior of
@@ -130,18 +130,7 @@ const projects = [
               behavior, etc. Then you can spawn them anywhere in the given environment.
               Each animal will have normal instinct, in order to simulates real animals.
             `}
-            {/* <br/>&emsp;
-            {`
-              They will find food, run from predators, and reproduce when ready. The
-              animals will gather in groups and follow the best agent in the area.
-              Each animals have a vision range, which determines which one will be
-              the leader. Within the vision range, the animals will act corresponding
-              to what they have detected. For example, if a predator is within range,
-              they will move away from the predators. If they are food within the vision,
-              they will move toward when they are hungry, and mark that area as their
-              food source so they could come back later.
-            `} */}
-            <br/>&emsp;
+            <br />&emsp;
             {`
               This simulator helps students study about biodiversity and
               the effects when a variable has changed. Users can interact with
@@ -150,6 +139,7 @@ const projects = [
               in real time.
             `}
           </Fragment>
+        )
       }
     ]
   },
@@ -171,16 +161,19 @@ const projects = [
       },
       {
         name: 'Remec',
-        collaborator: { name: 'Thitiwat Thongbor', site: 'https://github.com/thitgorn' },
+        collaborator: {
+          name: 'Thitiwat Thongbor',
+          site: 'https://github.com/thitgorn'
+        },
         tags: [ Tags.java, Tags.swing, Tags.android ],
         year: <Fragment> 1<sup>st</sup> Year </Fragment>,
         images: remecImages,
-        description:
+        description: (
           <Fragment>
             <b>Remec</b> is an
             {' '}
-            <a rel="noopener noreferrer" target="_blank"
-              href="https://github.com/thitgorn/remec">open-source</a>
+            <a rel='noopener noreferrer' target='_blank'
+              href='https://github.com/thitgorn/remec'>open-source</a>
             {' '}
             IoT (Internet of Things) application which tranforms your android device into a custom computer remote control
             with your own design. You can design your own remote interface and
@@ -188,37 +181,42 @@ const projects = [
             android application to get ready for tranfering the remote design
             into your mobile. See project
             {' '}
-            <a rel="noopener noreferrer" target="_blank"
-              href="https://thitgorn.github.io/remec/">website</a>.
+            <a rel='noopener noreferrer' target='_blank'
+              href='https://thitgorn.github.io/remec/'>website</a>.
           </Fragment>
+        )
       },
       {
         name: 'Take Care na Cup',
-        collaborator: { name: 'Sirakorn Lamyai', site: 'https://srakrn.me/' },
+        collaborator: {
+          name: 'Sirakorn Lamyai',
+          site: 'https://srakrn.me/'
+        },
         tags: [ Tags.html, Tags.js, Tags.jQuery ],
         year: <Fragment> 1<sup>st</sup> Year </Fragment>,
         images: takecarecupImages,
-        description:
+        description: (
           <Fragment>
             <b>TakeCareNaCup</b> is an IoT tumbler, with the ability to log and track
             water consumption rate and frequency in each day, in order to
             improve users' lifestyle into those with better health. See
             {' '}
-            <a rel="noopener noreferrer" target="_blank"
-              href="http://github.com/kykungz/takecarenacup">project website</a>
+            <a rel='noopener noreferrer' target='_blank'
+              href='http://github.com/kykungz/takecarenacup'>project website</a>
             {' '}
             and
             {' '}
-            <a rel="noopener noreferrer" target="_blank"
-              href="http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_14_Group_8">wiki</a>.
+            <a rel='noopener noreferrer' target='_blank'
+              href='http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_14_Group_8'>wiki</a>.
           </Fragment>
+        )
       },
       {
         name: 'What word is it?',
         tags: [ Tags.js, Tags.node, Tags.vue ],
         year: <Fragment> 2<sup>nd</sup> Year </Fragment>,
         images: whatwordImages,
-        description:
+        description: (
           <Fragment>
             A fun/ice-breaking group activity which you can create your own game
             and play. Users can generate a game by listing all the words into
@@ -226,22 +224,24 @@ const projects = [
             and the game can be displayed on the screen. One person will be guessing
             the word without seeing the answer, while others will see the answer
             but cannot say the word.{' '}
-            <a rel="noopener noreferrer" target="_blank"
-              href="http://kykungz.github.io/whatword">Play now</a>.
+            <a rel='noopener noreferrer' target='_blank'
+              href='http://kykungz.github.io/whatword'>Play now</a>.
           </Fragment>
+        )
       },
       {
         name: 'Barcamp Bangkhen 8',
         tags: [ Tags.js, Tags.sass, Tags.react ],
         year: <Fragment> 2<sup>nd</sup> Year </Fragment>,
         images: bcbk8Images,
-        description:
+        description: (
           <Fragment>
             <b>BarCamp</b> is an unconference event that assembles people who want to
             share knowledge, thoughts, experiences, or stories to other
             participants. This event has no definite sessions as everyone can
             choose topics they want to participate in.
           </Fragment>
+        )
       }
     ]
   }

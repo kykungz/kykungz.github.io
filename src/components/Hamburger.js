@@ -21,7 +21,7 @@ const HamburgerMenu = styled.div`
 `
 
 const ScrollLink = styled(Link).attrs({
-  smooth: "easeInOutQuint",
+  smooth: 'easeInOutQuint',
   duration: 800
 })`
   cursor: pointer;
@@ -40,31 +40,30 @@ const ScrollLink = styled(Link).attrs({
 
 const HamburgerMenuList = () => (
   <div>
-    <ScrollLink to="home" offset={-100}>
-      <FontAwesome name="home" /> Home
+    <ScrollLink to='home' offset={-100}>
+      <FontAwesome name='home' /> Home
     </ScrollLink>
-    <ScrollLink to="about" offset={-80}>
-      <FontAwesome name="user-circle-o" /> About
+    <ScrollLink to='about' offset={-80}>
+      <FontAwesome name='user-circle-o' /> About
     </ScrollLink>
-    <ScrollLink to="achievements" offset={-90}>
-      <FontAwesome name="star" /> Achievements
+    <ScrollLink to='achievements' offset={-90}>
+      <FontAwesome name='star' /> Achievements
     </ScrollLink>
-    <ScrollLink to="projects" offset={-90}>
-      <FontAwesome name="th" /> Projects
+    <ScrollLink to='projects' offset={-90}>
+      <FontAwesome name='th' /> Projects
     </ScrollLink>
-    <ScrollLink to="contact" offset={-400}>
-      <FontAwesome name="send" /> Contact
+    <ScrollLink to='contact' offset={-400}>
+      <FontAwesome name='send' /> Contact
     </ScrollLink>
   </div>
 )
 
 class Hamburger extends Component {
-
   state = {
     isOpen: false
   }
 
-  componentDidMount() {
+  componentDidMount () {
     document.getElementById('App').addEventListener('click', (e) => {
       if (this.state.isOpen && e.target.id !== 'toggle') {
         this.toggleHamburger()
@@ -76,15 +75,15 @@ class Hamburger extends Component {
     this.setState((prevState) => ({ isOpen: !prevState.isOpen }))
   }
 
-  render() {
+  render () {
     return (
       <Fragment>
         <ToggleButton onClick={this.toggleHamburger}>
           <FontAwesome
-            id="toggle"
+            id='toggle'
             style={{color: '#4f4f4f'}}
             size='2x'
-            name={ this.state.isOpen ? 'close' : 'bars'}
+            name={this.state.isOpen ? 'close' : 'bars'}
           />
         </ToggleButton>
         <HamburgerMenu isOpen={this.state.isOpen}>

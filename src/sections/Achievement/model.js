@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
+
 import { getImages } from '../../utils/functions'
+import Link from '../../components/Link'
 
 const lhdImages = getImages('localhackday', 6)
 const newsImages = getImages('news', 2)
@@ -7,6 +9,7 @@ const exdImages = getImages('exceed', 2)
 const ywc15Images = getImages('ywc15', 2)
 const ywc15NewsImages = getImages('ywc15-news', 2)
 const tescoLotusImages = getImages('tescolotus', 2)
+const siriventureImages = getImages('siriventure', 2)
 
 const achievements = [
   {
@@ -14,12 +17,12 @@ const achievements = [
     variant: 'danger',
     title: (
       <Fragment>
-        1<sup>st</sup> place "Local Hack Day 2016"
+        1<sup>st</sup> place 'Local Hack Day 2016'
       </Fragment>
     ),
     description: 'Student Hackathon hosted by GitHub and Major League Hacking (MLH)',
     images: lhdImages.map((image, i) =>
-      <img key={i} className="img-fluid" src={ image } alt=""/>
+      <img key={i} className='img-fluid' src={image} alt={image} />
     )
   },
   {
@@ -28,16 +31,14 @@ const achievements = [
     title: 'Interviewed with PostToday Magazine',
     description: (
       <Fragment>
-        <a rel="noopener noreferrer" target="_blank" href="https://www.posttoday.com/newspaper/magazine/469861">
-          Read Article <i className="fa fa-external-link"></i>
-        </a>
+        <Link href='https://www.posttoday.com/newspaper/magazine/469861' title='Read Ar' />
       </Fragment>
     ),
     images: (
-      <div className="row no-gutters">
+      <div className='row no-gutters'>
         { newsImages.map((image, i) =>
-          <div key={i} className="col-sm">
-            <img className="img-fluid" src={ image } alt={ image }/>
+          <div key={i} className='col-sm'>
+            <img className='img-fluid' src={image} alt={image} />
           </div>
         ) }
       </div>
@@ -48,12 +49,12 @@ const achievements = [
     variant: 'danger',
     title: (
       <Fragment>
-        "Best Software Design" award eXceed Camp 14<sup>th</sup>
+        'Best Software Design' award eXceed Camp 14<sup>th</sup>
       </Fragment>
     ),
     description: 'Software development training camp',
     images: exdImages.map((image, i) =>
-      <img key={i} className="img-fluid" src={ image } alt={ image }/>
+      <img key={i} className='img-fluid' src={image} alt={image} />
     )
   },
   {
@@ -61,7 +62,7 @@ const achievements = [
     variant: 'danger',
     title: (
       <Fragment>
-        "The Best Innovation" award YWC#15<sup>th</sup>
+        'The Best Innovation' award YWC#15<sup>th</sup>
       </Fragment>
     ),
     description: (
@@ -70,7 +71,7 @@ const achievements = [
       </Fragment>
     ),
     images: ywc15Images.map((image, i) =>
-      <img key={i} className="img-fluid" src={ image } alt={ image }/>
+      <img key={i} className='img-fluid' src={image} alt={image} />
     )
   },
   {
@@ -79,22 +80,14 @@ const achievements = [
     title: 'Representative of YWC Web Programmer',
     description: (
       <Fragment>
-        <a rel="noopener noreferrer" target="_blank" href="http://www.vcharkarn.com/vnews/506127">
-          vchakarn.com <i className="fa fa-external-link mr-3"></i>
-        </a>
-        <a rel="noopener noreferrer" target="_blank" href="https://mgronline.com/management/detail/9610000005827">
-          Manager Online <i className="fa fa-external-link mr-3"></i>
-        </a>
-        <a rel="noopener noreferrer" target="_blank" href="https://www.brandbuffet.in.th/2018/01/young-webmaster-camp-15th/">
-          Brand Buffet <i className="fa fa-external-link mr-3"></i>
-        </a>
-        <a rel="noopener noreferrer" target="_blank" href="http://www.ryt9.com/s/tpd/2770173">
-          Thai Post <i className="fa fa-external-link mr-3"></i>
-        </a>
+        <Link href='http://www.vcharkarn.com/vnews/506127' title='vchakarn.com' />
+        <Link href='https://mgronline.com/management/detail/9610000005827' title='Manager Online' />
+        <Link href='https://www.brandbuffet.in.th/2018/01/young-webmaster-camp-15th/' title='Brand Buffet' />
+        <Link href='http://www.ryt9.com/s/tpd/2770173' title='Thai Post' />
       </Fragment>
     ),
     images: ywc15NewsImages.map((image, i) =>
-      <img key={i} className="img-fluid" src={ image } alt={ image }/>
+      <img key={i} className='img-fluid' src={image} alt={image} />
     )
   },
   {
@@ -103,7 +96,18 @@ const achievements = [
     title: <Fragment>1<sup>st</sup> Runner Up Tesco Lotus Hackathon 2018</Fragment>,
     description: 'Tesco Lotus Hackathon: Revolutionising Retail Towards Thailand 4.0',
     images: tescoLotusImages.map((image, i) =>
-      <img key={i} className="img-fluid" src={ image } alt={ image }/>
+      <img key={i} className='img-fluid' src={image} alt={image} />
+    )
+  },
+  {
+    icon: 'certificate',
+    variant: 'danger',
+    title: 'The Winner Siri Ventures x HUBBA Stadium Hackathon',
+    description: (
+      <Link href='https://techsauce.co/property/siri-ventures-hubba-stadium-liveable-society-hackathon-2018/' title='techsauce.co' />
+    ),
+    images: siriventureImages.map((image, i) =>
+      <img key={i} className='img-fluid' src={image} alt={image} />
     )
   }
 ]

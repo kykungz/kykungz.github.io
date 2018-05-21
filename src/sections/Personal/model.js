@@ -27,12 +27,13 @@ const information = [
   },
   {
     title: 'Language',
-    answer:
+    answer: (
       <Fragment>
-        {'Thai (Native) 🇹🇭'} <br/>
-        {'English (Advance) 🇺🇸'} <br/>
-        {'German (Elementary) 🇩🇪'} <br/>
+        {'Thai (Native) 🇹🇭'} <br />
+        {'English (Advance) 🇺🇸'} <br />
+        {'German (Elementary) 🇩🇪'} <br />
       </Fragment>
+    )
   },
   {
     title: 'Education',

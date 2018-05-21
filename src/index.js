@@ -8,7 +8,7 @@ import 'devicon-2.2/devicon.min.css'
 
 import { injectGlobal } from 'styled-components'
 
-injectGlobal `
+injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Trirong|Work+Sans');
 
   * {
@@ -44,4 +44,4 @@ injectGlobal `
   @media screen and (max-width: 1024px) {}
 `
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))

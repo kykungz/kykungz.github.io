@@ -14,23 +14,23 @@ const Progress = styled.div`
 `
 
 const Skill = () => (
-  <div className="container content-container">
+  <div className='container content-container'>
     { skills.map((skill, i) =>
-      <Line key={i} className="row no-gutters align-items-center">
-        <div className="col-sm-4">
-          <h3 className="mb-0">
-            <i className={skill.icon}></i>
-            <b className="ml-2">{ skill.language }</b>
+      <Line key={i} className='row no-gutters align-items-center'>
+        <div className='col-sm-4'>
+          <h3 className='mb-0'>
+            <i className={skill.icon} />
+            <b className='ml-2'>{ skill.language }</b>
           </h3>
         </div>
-        <div className="col-sm-8">
+        <div className='col-sm-8'>
           <Framework>{ skill.frameworks }</Framework>
-          <Progress className="progress">
+          <Progress className='progress'>
             <div
               className={`progress-bar bg-${skill.variant}`}
-              role="progressbar" style={{width: `${skill.level}%`}}
-              aria-valuemin="0"
-              aria-valuemax="100"
+              role='progressbar' style={{width: `${skill.level}%`}}
+              aria-valuemin='0'
+              aria-valuemax='100'
             />
           </Progress>
         </div>

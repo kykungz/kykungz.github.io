@@ -12,8 +12,8 @@ const profile = {
       which brought me into this challenging field.
       I'm also looking for an internship in a software development company.
       If you are interested in me, feel free to{' '}
-      <a href="#contact">
-        <Link smooth="easeInOutQuint" to="contact">
+      <a href='#contact'>
+        <Link smooth='easeInOutQuint' to='contact'>
           <b>contact!</b>
         </Link>
       </a>

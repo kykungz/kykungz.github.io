@@ -16,20 +16,20 @@ const Image = styled.img`
 `
 
 const Experience = () => (
-  <div className="container-fluid">
+  <div className='container-fluid'>
     { withSeparator(experiences.map((exp, i) =>
-      <div key={i} className="row">
-        <ImageList className="col-sm-4">
-          <Image className="mx-auto img-fluid" src={exp.image} alt={exp.alt} />
+      <div key={i} className='row'>
+        <ImageList className='col-sm-4'>
+          <Image className='mx-auto img-fluid' src={exp.image} alt={exp.alt} />
         </ImageList>
-        <div className="col-sm-8">
-          <h4 className="text-center text-sm-left">
-            <b className="d-block d-md-inline-block mr-2">{ exp.position }</b>
-            <span className="badge badge-dark">@{ exp.company }</span>
+        <div className='col-sm-8'>
+          <h4 className='text-center text-sm-left'>
+            <b className='d-block d-md-inline-block mr-2'>{ exp.position }</b>
+            <span className='badge badge-dark'>@{ exp.company }</span>
           </h4>
-          <ul className="mb-0">
+          <ul className='mb-0'>
             { exp.info.map((info, i) =>
-              <li key={i} className="lead my-2">{ info }</li>
+              <li key={i} className='lead my-2'>{ info }</li>
             ) }
           </ul>
         </div>
