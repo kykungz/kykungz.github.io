@@ -5,6 +5,7 @@ import sellsukiImg from '../../assets/images/sellsuki.png'
 // import ywc15Img from '../../assets/images/ywc15.jpg'
 import kuImg from '../../assets/images/ku.jpg'
 import tedImg from '../../assets/images/ted.jpg'
+import wongnaiImg from '../../assets/images/wongnai.png'
 
 const experiences = [
   {
@@ -62,6 +63,18 @@ const experiences = [
     info: [
       'React, Next.js',
       'January, 2018'
+    ]
+  },
+  {
+    position: 'Developer Intern',
+    company: 'Wongnai Media',
+    alt: 'wongnai',
+    image: wongnaiImg,
+    info: [
+      'Wongnai Travel',
+      'React',
+      'GraphQL',
+      'June, 2018'
     ]
   }
   // {
