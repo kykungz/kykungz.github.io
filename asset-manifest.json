@@ -1,11 +1,11 @@
 {
   "main.css": "static/css/main.34908ec2.css",
   "main.css.map": "static/css/main.34908ec2.css.map",
-  "main.js": "static/js/main.d2accdeb.js",
-  "main.js.map": "static/js/main.d2accdeb.js.map",
-  "static/media/1.jpg": "static/media/1.3d8f1c61.jpg",
-  "static/media/1.png": "static/media/1.e9a609aa.png",
-  "static/media/2.gif": "static/media/2.4c50dcb6.gif",
+  "main.js": "static/js/main.c12e8235.js",
+  "main.js.map": "static/js/main.c12e8235.js.map",
+  "static/media/1.jpg": "static/media/1.9126e001.jpg",
+  "static/media/1.png": "static/media/1.25416bb2.png",
+  "static/media/2.gif": "static/media/2.3db4ee90.gif",
   "static/media/2.jpg": "static/media/2.0f41bff0.jpg",
   "static/media/2.png": "static/media/2.3f87ae6f.png",
   "static/media/3.jpg": "static/media/3.da08be29.jpg",
@@ -43,5 +43,6 @@
   "static/media/takecare-mobile-2.png": "static/media/takecare-mobile-2.5c1ec40e.png",
   "static/media/ted.jpg": "static/media/ted.a8b267c2.jpg",
   "static/media/whack.gif": "static/media/whack.b2711aff.gif",
+  "static/media/yeah.png": "static/media/yeah.2c1c6a18.png",
   "static/media/ywc15.jpg": "static/media/ywc15.4a9d7808.jpg"
 }
