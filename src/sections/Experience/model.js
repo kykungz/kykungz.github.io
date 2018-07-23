@@ -6,6 +6,7 @@ import sellsukiImg from '../../assets/images/sellsuki.png'
 import kuImg from '../../assets/images/ku.jpg'
 import tedImg from '../../assets/images/ted.jpg'
 import wongnaiImg from '../../assets/images/wongnai.png'
+import yeahImg from '../../assets/images/yeah.png'
 
 const experiences = [
   {
@@ -61,7 +62,7 @@ const experiences = [
     alt: 'TEDx',
     image: tedImg,
     info: [
-      'React, Next.js',
+      'React',
       'January, 2018'
     ]
   },
@@ -74,6 +75,19 @@ const experiences = [
       'Wongnai Travel',
       'React',
       'GraphQL',
+      'June, 2018'
+    ]
+  },
+  {
+    position: 'Co-Founder',
+    company: 'YEAH',
+    alt: 'yeah',
+    image: yeahImg,
+    info: [
+      <a rel='noopener noreferrer' target='_blank' href='https://www.facebook.com/yeahentrepreneurhub/'>
+        Young Entrepreneur Assembly Hub
+      </a>,
+      'The largest young startup community in Thailand',
       'June, 2018'
     ]
   }
@@ -90,4 +104,4 @@ const experiences = [
   // }
 ]
 
-export default experiences
+export default experiences.reverse()

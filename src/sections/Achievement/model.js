@@ -29,11 +29,7 @@ const achievements = [
     icon: 'newspaper-o',
     variant: 'danger',
     title: 'Interviewed with PostToday Magazine',
-    description: (
-      <Fragment>
-        <Link href='https://www.posttoday.com/newspaper/magazine/469861' title='Read Ar' />
-      </Fragment>
-    ),
+    description: 'Representative of the Winner team',
     images: (
       <div className='row no-gutters'>
         { newsImages.map((image, i) =>
@@ -102,9 +98,11 @@ const achievements = [
   {
     icon: 'certificate',
     variant: 'danger',
-    title: 'The Winner Siri Ventures x HUBBA Stadium Hackathon',
+    title: 'The Winner Liveable Society Hackathon',
     description: (
-      <Link href='https://techsauce.co/property/siri-ventures-hubba-stadium-liveable-society-hackathon-2018/' title='techsauce.co' />
+      <Fragment>
+        Siri Ventures x HUBBA Stadium Hackathon <Link href='https://techsauce.co/property/siri-ventures-hubba-stadium-liveable-society-hackathon-2018/' title='techsauce.co' />
+      </Fragment>
     ),
     images: siriventureImages.map((image, i) =>
       <img key={i} className='img-fluid' src={image} alt={image} />
@@ -112,4 +110,4 @@ const achievements = [
   }
 ]
 
-export default achievements
+export default achievements.reverse()

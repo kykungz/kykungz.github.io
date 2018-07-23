@@ -247,4 +247,4 @@ const projects = [
   }
 ]
 
-export default projects
+export default projects.map(project => ({ ...project, list: project.list.reverse() })).reverse()
