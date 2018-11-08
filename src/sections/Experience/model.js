@@ -7,6 +7,7 @@ import kuImg from '../../assets/images/ku.jpg'
 import tedImg from '../../assets/images/ted.jpg'
 import wongnaiImg from '../../assets/images/wongnai.png'
 import yeahImg from '../../assets/images/yeah.png'
+import ngImg from '../../assets/images/nisitgeneration.jpg'
 
 const experiences = [
   {
@@ -88,6 +89,19 @@ const experiences = [
         Young Entrepreneur Assembly Hub
       </a>,
       'The largest young startup community in Thailand',
+      'June, 2018'
+    ]
+  },
+  {
+    position: 'Co-Founder/Developer',
+    company: 'Nisit Generation',
+    alt: 'nisitgen',
+    image: ngImg,
+    info: [
+      <a rel='noopener noreferrer' target='_blank' href='https://www.facebook.com/NisitGeneration'>
+        Nisit Generation
+      </a>,
+      'Opportunities for College Student',
       'June, 2018'
     ]
   }
