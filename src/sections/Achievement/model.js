@@ -10,6 +10,7 @@ const ywc15Images = getImages('ywc15', 2)
 const ywc15NewsImages = getImages('ywc15-news', 2)
 const tescoLotusImages = getImages('tescolotus', 2)
 const siriventureImages = getImages('siriventure', 2)
+const firebaseImages = getImages('firebase', 1)
 
 const achievements = [
   {
@@ -105,6 +106,15 @@ const achievements = [
       </Fragment>
     ),
     images: siriventureImages.map((image, i) =>
+      <img key={i} className='img-fluid' src={image} alt={image} />
+    )
+  },
+  {
+    icon: 'graduation-cap',
+    variant: 'warning',
+    title: 'Firebase Foundations',
+    description: 'Knowledge Sharing at Department of Computer Engineering',
+    images: firebaseImages.map((image, i) =>
       <img key={i} className='img-fluid' src={image} alt={image} />
     )
   }
