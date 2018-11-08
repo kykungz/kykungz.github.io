@@ -6,6 +6,7 @@ const Jumbotron = styled.div`
   background-image: url(${backgroundImg});
   background-size: auto 100%;
   background-repeat: repeat-x;
+  background-position: center;
 `
 
 const Title = styled.div`
