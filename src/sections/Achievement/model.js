@@ -10,7 +10,7 @@ const ywc15Images = getImages('ywc15', 2)
 const ywc15NewsImages = getImages('ywc15-news', 2)
 const tescoLotusImages = getImages('tescolotus', 2)
 const siriventureImages = getImages('siriventure', 2)
-const firebaseImages = getImages('firebase', 1)
+const firebaseImages = getImages('firebase', 2)
 
 const achievements = [
   {
