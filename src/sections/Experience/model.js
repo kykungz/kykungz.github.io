@@ -8,6 +8,7 @@ import tedImg from '../../assets/images/ted.jpg'
 import wongnaiImg from '../../assets/images/wongnai.png'
 import yeahImg from '../../assets/images/yeah.png'
 import ngImg from '../../assets/images/nisitgeneration.jpg'
+import omnivirtImg from '../../assets/images/omnviirt.png'
 
 const experiences = [
   {
@@ -103,6 +104,18 @@ const experiences = [
       </a>,
       'Opportunities for College Student',
       'June, 2018'
+    ]
+  },
+  {
+    position: 'Software Engineer Intern',
+    company: 'OmniVirt',
+    alt: 'omnivirt',
+    image: omnivirtImg,
+    info: [
+      'Leading Immersive Advertising (3D, VR/AR, 360°) Platform based in Silicon Valley',
+      'React',
+      'Ruby on Rails',
+      'June, 2019'
     ]
   }
   // {
