@@ -8,7 +8,7 @@ import tedImg from '../../assets/images/ted.jpg'
 import wongnaiImg from '../../assets/images/wongnai.png'
 import yeahImg from '../../assets/images/yeah.png'
 import ngImg from '../../assets/images/nisitgeneration.jpg'
-import omnivirtImg from '../../assets/images/omnviirt.png'
+import omnivirtImg from '../../assets/images/omnvirt.png'
 
 const experiences = [
   {
