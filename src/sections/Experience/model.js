@@ -9,6 +9,7 @@ import wongnaiImg from '../../assets/images/wongnai.png'
 import yeahImg from '../../assets/images/yeah.png'
 import ngImg from '../../assets/images/nisitgeneration.jpg'
 import omnivirtImg from '../../assets/images/omnivirt.png'
+import cleverseImg from '../../assets/images/cleverse.jpg'
 
 const experiences = [
   {
@@ -116,6 +117,18 @@ const experiences = [
       'React',
       'Ruby on Rails',
       'June, 2019'
+    ]
+  },
+  {
+    position: 'Software Engineer & Part-time',
+    company: 'Cleverse',
+    alt: 'cleverse',
+    image: cleverseImg,
+    info: [
+      'Venture Builder',
+      'React + Typescript',
+      'React Native',
+      'Aug, 2019'
     ]
   }
   // {
