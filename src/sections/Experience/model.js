@@ -10,6 +10,7 @@ import yeahImg from '../../assets/images/yeah.png'
 import ngImg from '../../assets/images/nisitgeneration.jpg'
 import omnivirtImg from '../../assets/images/omnivirt.png'
 import cleverseImg from '../../assets/images/cleverse.jpg'
+import microsoftImg from '../../assets/images/microsoft.jpg'
 
 const experiences = [
   {
@@ -129,6 +130,15 @@ const experiences = [
       'React + Typescript',
       'React Native',
       'Aug, 2019'
+    ]
+  },
+  {
+    position: 'Microsoft Student Parner',
+    company: 'Microsoft',
+    alt: 'microsoft student partner',
+    image: microsoftImg,
+    info: [
+      'MSP 2019-2020'
     ]
   }
   // {
