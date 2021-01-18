@@ -12,14 +12,14 @@ const Nav = styled.nav`
 `
 
 const NavItem = styled.span.attrs({
-  className: 'nav-item'
+  className: 'nav-item',
 })`
   color: black;
   font-size: 18px;
 `
 
 const NavbarBrand = styled.a.attrs({
-  className: 'navbar-brand'
+  className: 'navbar-brand',
 })`
   margin: 6px 16px;
 `
@@ -28,7 +28,7 @@ const ScrollLink = styled(Link).attrs({
   activeClass: 'active',
   spy: true,
   smooth: 'easeInOutQuint',
-  duration: 800
+  duration: 800,
 })`
   cursor: pointer;
   padding: 13px;
@@ -40,33 +40,60 @@ const ScrollLink = styled(Link).attrs({
 `
 
 const NavBar = () => (
-  <Nav className='navbar navbar-light navbar-expand-lg sticky-top'>
-    <div className='container-fluid mx-lg-4'>
-      <NavbarBrand href='/'>
-        <FontAwesome name='code' size='lg' />
-        <b className='mx-2'>
-          Kongpon
-        </b>
-        <FontAwesome name='copyright' size='lg' style={{color: 'orange'}} />
+  <Nav className="navbar navbar-light navbar-expand-lg sticky-top">
+    <div className="container-fluid mx-lg-4">
+      <NavbarBrand href="/">
+        <FontAwesome name="code" size="lg" />
+        <b className="mx-2">Kongpon</b>
+        <FontAwesome name="copyright" size="lg" style={{ color: 'orange' }} />
       </NavbarBrand>
-      <div className='navbar-nav d-none d-lg-flex'>
-        <ScrollLink to='home' offset={-100}>
-          <NavItem> <FontAwesome name='home' /> Home </NavItem>
+      <div className="navbar-nav d-none d-lg-flex align-items-center">
+        <ScrollLink to="home" offset={-100}>
+          <NavItem>
+            {' '}
+            <FontAwesome name="home" /> Home{' '}
+          </NavItem>
         </ScrollLink>
-        <ScrollLink to='about' offset={-80}>
-          <NavItem> <FontAwesome name='user-circle-o' /> About </NavItem>
+        <ScrollLink to="about" offset={-80}>
+          <NavItem>
+            {' '}
+            <FontAwesome name="user-circle-o" /> About{' '}
+          </NavItem>
         </ScrollLink>
-        <ScrollLink to='achievements' offset={-90}>
-          <NavItem> <FontAwesome name='star' /> Achievements </NavItem>
+        <ScrollLink to="achievements" offset={-90}>
+          <NavItem>
+            {' '}
+            <FontAwesome name="star" /> Achievements{' '}
+          </NavItem>
         </ScrollLink>
-        <ScrollLink to='projects' offset={-90}>
-          <NavItem> <FontAwesome name='th' /> Projects </NavItem>
+        <ScrollLink to="projects" offset={-90}>
+          <NavItem>
+            {' '}
+            <FontAwesome name="th" /> Projects{' '}
+          </NavItem>
         </ScrollLink>
-        <ScrollLink to='contact' offset={-90}>
-          <NavItem> <FontAwesome name='send' /> Contact </NavItem>
+        <ScrollLink to="contact" offset={-90}>
+          <NavItem>
+            {' '}
+            <FontAwesome name="send" /> Contact{' '}
+          </NavItem>
         </ScrollLink>
+        <a
+          href="https://webring.wonderful.software#kykungz.dev"
+          title="วงแหวนเว็บ"
+          style={{ marginLeft: '1rem' }}
+          target="__blank"
+          rel="noopenner noreferrer"
+        >
+          <img
+            alt="วงแหวนเว็บ"
+            width="32"
+            height="32"
+            src="https://webring.wonderful.software/webring.black.svg"
+          />
+        </a>
       </div>
-      <div className='mr-4 mt-1 d-flex d-lg-none'>
+      <div className="mr-4 mt-1 d-flex d-lg-none">
         <Hamburger />
       </div>
     </div>

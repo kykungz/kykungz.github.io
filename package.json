@@ -99,9 +99,6 @@
       "react-app"
     ]
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "devDependencies": {
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
